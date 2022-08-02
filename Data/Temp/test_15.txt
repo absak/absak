@@ -1,0 +1,66 @@
+  A  RECOUVRER  A  LA  DATE  DU  25 03 2021                                320,07*
+REF ETAT :  PKO  TOTAL      UP PAIGKMREF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   30     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 305 078     POSTE : 0952086   CLG MONTESQUIEU BEAUCHAMP                                    *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1940550025280 28 00  I      5110               2021C0695      I        0780              I    30      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  VIVIER                   LEO                                 I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        12D RUE DES PICOTTES                                   I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      95150 TAVERNY                                            I  MONTANT DE LA PROPOSITION DE TITRE  :           67,15           *
+*      TAVERNY                                                  I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 55 JA              I                I           I           I           I           I             I           I            *
+* ISO ELEVE PART FIXE      I          50,57 I      0,00 I      0,00 I      1,09 I      2,56 I        0,00 I       0,00I      46,92 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* RAPPEL ANNEE COURANTE    I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 55 JA              I                I           I           I           I           I             I           I            *
+* ISO ELEVE PART FIXE      I          20,22 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I      20,22 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* RAPPEL ANNEES ANTERIEURESI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 55 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,01 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       0,01 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* RAPPEL ANNEE COURANTE    I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+************************************************************************************************************************************
+*                          MONTANT  TOTAL  

@@ -1,0 +1,66 @@
+  A  RECOUVRER  A  LA  DATE  DU  25 03 2021                               4248,63*
+REF ETAT :  PKO  TOTAL      UP PAIGKMREF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   42     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 325 078     POSTE : 0782924   LYCEE SARTROUVILLE                                           *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  2861191345018 12 00  I      5110               2021C2499      I        0780              I    30      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  CHARTIER                 GAELLE                              I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        61  RUE DU REVEIL MATIN                                I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      78800 HOUILLES                                           I  MONTANT DE LA PROPOSITION DE TITRE  :           73,20           *
+*      HOUILLES                                                 I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 JA              I                I           I           I           I           I             I           I            *
+* ISOE PART FIXE           I           2,88 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,01I       2,87 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,65 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       0,65 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* DU 25/01/2021         CARI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PREC. CARENCE REM. PR.   I          82,72 I      0,00 I      9,18 I      0,00 I      5,93 I        0,00 I       0,40I      67,21 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* DU 25/01/2021            I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 ZR              I                I           I           I           I           I             I           I            *
+* PREC. CARENCE IND. RESID.I           2,48 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,01I       2,47 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* DU 25/01/2021            I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+************************************************************************************************************************************
+*                          MONTANT  TOTAL  

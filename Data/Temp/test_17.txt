@@ -1,0 +1,125 @@
+  A  RECOUVRER  A  LA  DATE  DU  25 03 2021                                739,16*
+REF ETAT :  PKO  TOTAL      UP PAIGKMREF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   32     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 305 078     POSTE : 0910979   CLG CROSNE                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  2840831561039 31 00  I      5110               2021C2338      I        0780              I    90      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  MARCEL                   CELINE                              I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*       100  AV  DE BARBUSSE                                    I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      91210 DRAVEIL                                            I  MONTANT DE LA PROPOSITION DE TITRE  :           72,16           *
+*      DRAVEIL                                                  I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 10 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I           2,13 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,08I       2,05 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* 01J DEBUT 24/01/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 10 JA              I                I           I           I           I           I             I           I            *
+* ISOE PART FIXE           I           3,37 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,14I       3,23 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 10 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           0,43 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,01I       0,42 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* 01J DEBUT 24/01/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 10 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,83 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,03I       0,80 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* 01J DEBUT 24/01/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   33     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 305 078     POSTE : 0910979   CLG CROSNE                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  2840831561039 31 00  I      5110               2021C2338      I        0780              I    90      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  MARCEL                   CELINE                              I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*       100  AV  DE BARBUSSE                                    I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      91210 DRAVEIL                                            I  MONTANT DE LA PROPOSITION DE TITRE  :           72,16           *
+*      DRAVEIL                                                  I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 10 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I          76,58 I      0,00 I      0,00 I      2,54 I      5,40 I        0,00 I       2,98I      65,66 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* 01J DEBUT 24/01/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+************************************************************************************************************************************
+*                          MONTANT  TOTAL  

@@ -1,0 +1,66 @@
+  A  RECOUVRER  A  LA  DATE  DU  25 03 2021                                 94,43*
+REF ETAT :  PKO  TOTAL      UP PAIGKMREF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   73     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 517 078     POSTE : 0782556   LT VINCI ST GERMAIN                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  2770899109M01    00  I      5110               2021C1842      I        0780              I    90      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  MULLER                   ANNETT                              I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*         2  AV  CARNOT                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      78110 SAINT GERMAIN EN LAYE                              I  MONTANT DE LA PROPOSITION DE TITRE  :           67,56           *
+*      SAINT GERMAIN EN LAYE                                    I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 YH              I                I           I           I           I           I             I           I            *
+* PRECOMPTE IJSS           I          33,62 I      6,14 I      2,35 I      2,39 I      5,61 I        0,00 I       0,00I      17,13 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* IJSS ML DU 25 AU 29 02 20I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YH              I                I           I           I           I           I             I           I            *
+* PRECOMPTE IJSS           I          50,43 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I      50,43 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* MARS      2021           I                I           I           I           I           I             I           I            *
+* IJSS MAL DU 1 AU 3 03 20 I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+************************************************************************************************************************************
+*                          MONTANT  TOTAL  

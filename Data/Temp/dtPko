@@ -1,0 +1,100 @@
+DPE,Code_Gestion,BGE Paye,PKO_Date_Edition,Annee,Type_PKO_QTV,Numero_enregistrement,INSEE,Nom,Prenom,Adresse,Code_Postal,Commune,Pays,conformité adresse,EMAIL PRO,Date_de_Naissance,Departement de naissance,Commune de naissance,pays de naissance,Discipline,Montant_Initial,Montant_du_Precompte,Montant_Final_a_notifié,Libelle_Indus,libellé des éléments de rémunération constituant l'indu,BOP,date envoi DAF
+DPE5,245 078,PE05GK ,MARS     ,2021,PKO,2021C0349,1561175116046 76 10,GREGORY,PIERRE,3  RUE DES ALOUETTES,78550,HOUDAN,       FRANCE,, Pierre.Gregory@ac-versailles.fr,11/11/1956
+,Non trouvé,                                          ,Non trouvé, MATH SC PH   ,85.15,0,68.54,Non trouvé,Non trouvé,date envoi DAF,
+DPE5,245 078,PE05GJ ,MARS     ,2021,PKO,2021C0351,1570975110066 58 10,DALESKY,JEROME,8  RUE DES MARTYRS,75009,PARIS,  100  FRANCE,, Jerome.Dalesky@ac-versailles.fr,07/09/1957
+,Non trouvé,                                          ,Non trouvé, ARTS APPLI   ,9496.97,3200.18,5540.33,Non trouvé,Non trouvé,date envoi DAF,
+DPE5,245 078,PE05GA ,MARS     ,2021,PKO,2021C0396,1631278646158 49 10,LANDRE,OLIVIER,61  RUE DE GLATIGNY,78150,LE CHESNAY,  100  FRANCE,, Olivier.Landre@ac-versailles.fr,16/12/1963
+,   YVELINES   ,         VERSAILLES                       ,   FRANCE                       , ELECTROTEC   ,4341.59,0,3085.67,Non trouvé,Non trouvé,date envoi DAF,
+DPE4,255 078,PE04GK ,MARS     ,2021,PKO,2021C2563,2880375114836 25 00,LEQUIEN,ANNE,17  RUE DU BERRY,22000,SAINT BRIEUC,  100  FRANCE,, Anne.Lequien@ac-versailles.fr,30/03/1988
+,   PARIS      ,         PARIS                            ,   FRANCE                       , EDUCATION    ,4108.36,0,3191.68,Non trouvé,Non trouvé,date envoi DAF,
+DPE6,285 078,PE06GB ,MARS     ,2021,PKO,2021C0343,1550699380504 40 10,CHAMSDINE,ABDELLATIF,33  IMP G APPOLINAIRE,95370,MONTIGNY LES CORMEILLES,  100  FRANCE,, Abdellatif.Chamsdine@ac-versailles.fr,07/06/1955
+,   ETRANGER   ,                                          ,   MAROC                        , LET MODERN   ,176.78,0,147.86,Non trouvé,Non trouvé,date envoi DAF,
+DPE6,285 078,PE06GQ ,MARS     ,2021,PKO,2021C0348,1561175051185 44 10,MENETRIER,LIONEL,2  RUE BOKANOWSKI,92600,ASNIERES,  100  FRANCE,, Lionel.Menetrier@ac-versailles.fr,17/11/1956
+,   HTSSEINE  ,         NEUILLY SUR SEINE                ,   FRANCE                       , HIST GEO     ,1727.14,524,920.44,Non trouvé,Non trouvé,date envoi DAF,
+DPE6,285 078,PE06GE ,MARS     ,2021,PKO,2021C0470,1730954184053 59 00,KEPA,EMMANUEL,17  RUE FRIANT,75014,PARIS,  100  FRANCE,, Emmanuel.Kepa@ac-versailles.fr,30/09/1973
+,   MEUR.MOSE. ,         ESSEY LES NANCY                  ,   FRANCE                       , LET MODERN   ,269.01,0,226.37,Non trouvé,Non trouvé,date envoi DAF,
+DPE6,285 078,PE06GD ,MARS     ,2021,PKO,2021C1770,2760589387081 10 00,GODNAIR,NATHALIE,3  PL  RACINE,92100,BOULOGNE-BILLANCOURT,  100  FRANCE,, Nathalie.Godnair@ac-versailles.fr,30/05/1976
+,   YONNE      ,         SENS                             ,   FRANCE                       , LET MODERN   ,377.6,0,308.21,Non trouvé,Non trouvé,date envoi DAF,
+DPE6,285 078,PE06GQ ,MARS     ,2021,PKO,2021C2925,2960385191266 48 00,PREAULT,MARINE,78  AV  DE LA REPUBLIQUE,91230,MONTGERON,  100  FRANCE,, Marine.Preault@ac-versailles.fr,05/03/1996
+,   VENDEE     ,         LA ROCHE SUR YON                 ,   FRANCE                       , HIST GEO     ,133.41,58,74.78,Non trouvé,Non trouvé,date envoi DAF,
+DPE7,295 078,PE07GP ,MARS     ,2021,PKO,2021C0352,1571078172337 93 00,LYONNET,JEAN-CLAUDE,7  R   DE LA NOUE,78700,CONFLANS-STE-HONORINE,  100  FRANCE,, jean-claude.lyonnet@ac-versailles.fr,28/10/1957
+,   YVELINES   ,         CONFLANS STE HONORINE            ,   FRANCE                       , SC.VIE TER   ,8591.34,0,6093.64,Non trouvé,Non trouvé,date envoi DAF,
+DPE7,295 078,PE07GK ,MARS     ,2021,PKO,2021C0405,1650783126180 85 00,DELAHAYE,PASCAL,6  RUE PERNETY,75014,PARIS,  100  FRANCE,, Pascal.Delahaye@ac-versailles.fr,05/07/1965
+,   VAR        ,         LA SEYNE SUR MER                 ,   FRANCE                       , SC PHYSIQ.   ,300.52,0,271.42,Non trouvé,Non trouvé,date envoi DAF,
+DPE7,295 078,PE07GG ,MARS     ,2021,PKO,2021C0542,1800566136238 01 00,PIJOAN,DAVID,28  RUE GRAMME,92270,BOIS COLOMBES,  100  FRANCE,, David-Joan-Gald.Pijoan@ac-versailles.fr,21/05/1980
+,   PYR.ORIEN. ,         PERPIGNAN                        ,   FRANCE                       , MATHEMATIQ   ,1286.48,0,1207.26,Non trouvé,Non trouvé,date envoi DAF,
+DPE7,295 078,Non trouvé,MARS     ,2021,PKO,2021C0662,1901195500217 50 00,COUDERC,PIERRE,4  R   DU CHATEAU,95420,NUCOURT,Paye,,Non trouvé,14/02/1967
+,Non trouvé,                                          ,Non trouvé, ELECTRONIQ   ,96.2,0,82.69,Non trouvé,Non trouvé,date envoi DAF,
+DPE7,295 078,PE07GE ,MARS     ,2021,PKO,2021C0853,2601275118286 31 00,KHODRI,ANNIE,30  R   SAINTE GENEVIEVE,92230,GENNEVILLIERS,  100  FRANCE,, Annie.Khodri@ac-versailles.fr,26/12/1960
+,   PARIS      ,         PARIS                            ,   FRANCE                       , MATHEMATIQ   ,151.24,0,137.03,Non trouvé,Non trouvé,date envoi DAF,
+DPE7,295 078,Non trouvé,MARS     ,2021,PKO,2021C2656,2900128085081 73 00,MOUSSEIGNE,CECILE ISABELLE,3  RUE PIERRE CURIE,92600,ASNIERES SUR SEINE,Paye,Non éffectué,non trouvé,non trouvé,non trouvé,non trouvé,non trouvé,Non trouvé,330.83,0,320.07,Non trouvé,Non trouvé,date envoi DAF,
+DPE8,305 078,PE08GO ,MARS     ,2021,PKO,2021C0695,1940550025280 28 00,VIVIER,LEO,12D RUE DES PICOTTES,95150,TAVERNY,  100  FRANCE,, Leo.Vivier@ac-versailles.fr,31/05/1994
+,   MANCHE     ,         AVRANCHES                        ,   FRANCE                       , ANGLAIS      ,70.8,0,67.15,Non trouvé,Non trouvé,date envoi DAF,
+DPE8,305 078,PE08GN ,MARS     ,2021,PKO,2021C0727,2570899127154 07 00,MINISTERI,JOCELYNE,LE GALION 14  AV  CHARLY CHAPLIN,91700,SAINTE GENEVIEVE DES BO,  100  FRANCE,, Jocelyne.Ministeri@ac-versailles.fr,01/08/1957
+,Non trouvé,                                          ,   ITALIE                       , ITALIEN      ,1654.46,668.93,739.16,Non trouvé,Non trouvé,date envoi DAF,
+DPE8,305 078,PE08GB ,MARS     ,2021,PKO,2021C2338,2840831561039 31 00,MARCEL,CELINE,00  AV  DE BARBUSSE,91210,DRAVEIL,  100  FRANCE,, Celine.Marcel@ac-versailles.fr,26/08/1984
+,   HTEGARON. ,         L'UNION                          ,   FRANCE                       , ALLEMAND     ,83.34,0,72.16,Non trouvé,Non trouvé,date envoi DAF,
+DPE8,305 078,PE08GF ,MARS     ,2021,PKO,2021C2446,2860308105045 83 00,GERARDIN,MARINE DOMINIQU,24  RUE DU PETIT FOUR,91410,CORBREUSE,  100  FRANCE,, Marine-Dom.Gerardin@ac-versailles.fr,07/03/1986
+,   ARDENNES   ,         CHARLEVILLE MEZIERES             ,   FRANCE                       , ANGLAIS      ,415.34,0,385.31,Non trouvé,Non trouvé,date envoi DAF,
+DPE8,305 078,PE08GA ,MARS     ,2021,PKO,2021C2654,2891271475103 25 00,DUC,CHARLENE,RESIDENCE MAJESTY 24  RUE HOUDAN,92330,SCEAUX,  100  FRANCE,, Charlene.Duc@ac-versailles.fr,26/12/1989
+,   SAONELRE. ,         ST REMY                          ,   FRANCE                       , ALLEMAND     ,693.99,0,548.28,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GJ ,MARS     ,2021,PKO,2021C0421,1680156007014 39 00,LE BOULER,STEPHANE,57  AV  SUFFREN,75007,PARIS,  100  FRANCE,, Stephane.Le-Bouler@ac-versailles.fr,09/01/1968
+,   MORBIHAN   ,                                          ,   FRANCE                       , SC.SOCIALE   ,3994.97,0,2911.44,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GI ,MARS     ,2021,PKO,2021C0665,1901292025143 18 00,JUILLARD,JEAN-BAPTISTE,6  RUE LAMARCK,75018,PARIS,  100  FRANCE,, Jean-Baptiste.Juillard@ac-versailles.fr,24/12/1990
+,   HTSSEINE  ,         COLOMBES                         ,   FRANCE                       , PHILOSOPHI   ,1583.46,0,1269.00,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GA ,MARS     ,2021,PKO,2021C0714,2560375044053 14 10,JACLOT,FRANCOISE,10  ALL MOZART,92400,COURBEVOIE,  100  FRANCE,, Francoise.Jaclot@ac-versailles.fr,23/03/1956
+,   HTSSEINE  ,         LEVALLOIS PERRET                 ,   FRANCE                       , ARTS PLAST   ,2084.15,0,1572.61,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GP ,MARS     ,2021,PKO,2021C0737,2580375110206 14 00,NOEL,PATRICIA-SYLVIE,33  RUE DES GRES,91800,BRUNOY,  100  FRANCE,, Patricia-Sylvie.Noel@ac-versailles.fr,15/03/1958
+,   PARIS      ,         PARIS                            ,   FRANCE                       , TECHNOLOGI   ,3967.87,0,3044.95,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GA ,MARS     ,2021,PKO,2021C0768,2581275114544 88 00,CHAPEL,FLORENCE,79  RUE DE FLEURY,92140,CLAMART,  100  FRANCE,, Florence.Chapel@ac-versailles.fr,21/12/1958
+,Non trouvé,                                          ,Non trouvé, ARTS PLAST   ,51.87,0,48.35,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GE ,MARS     ,2021,PKO,2021C1025,2641206088320 42 00,SAPORTA,MICHAELA,15  R   MARC SANGNIER,92290,CHATENAY MALABRY,  100  FRANCE,, Michaela.Saporta@ac-versailles.fr,24/12/1964
+,   ALPESMAR. ,         NICE                             ,   FRANCE                       , ECO G. INT   ,5406.65,0,4248.63,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GJ ,MARS     ,2021,PKO,2021C2499,2861191345018 12 00,CHARTIER,GAELLE,61  RUE DU REVEIL MATIN,78800,HOUILLES,  100,, Gaelle.Chartier@ac-versailles.fr,02/11/1986
+,   ESSONNE    ,         LONGJUMEAU                       ,   FRANCE                       , SC.SOCIALE   ,88.73,0,73.20,Non trouvé,Non trouvé,date envoi DAF,
+DPE9,325 078,PE09GA ,MARS     ,2021,PKO,2021C2562,2880199205001 69 00,ADROUNI,TALAR,38  RUE DU GAL EXELMANS,78140,VELIZY VILLACOUBLAY,  100  FRANCE,, Talar.Adrouni@ac-versailles.fr,12/01/1988
+,Non trouvé,                                          ,   LIBAN                        , ARTS PLAST   ,4397.38,0,3175.66,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,355 078,PE02GH ,MARS     ,2021,PKO,2021C2829,2930299127L01    00,LASTELLA,FAUSTA,53  R   CLAUDE DECAEN,75012,PARIS,  100  FRANCE,, Fausta.Lastella@ac-versailles.fr,28/02/1993
+,Non trouvé,                                          ,   ITALIE                       , ASE ITALIE   ,1464.73,0,1178.43,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,355 078,PE02GH ,MARS     ,2021,PKO,2021C2874,2940899404K01    00,KORIEOCHA,ERICA,13  RTE DE VAUHALLAN,91430,IGNY,  100  FRANCE,, Erica.Korieocha@ac-versailles.fr,01/08/1994
+,Non trouvé,                                          ,   ETATS UNIS                   , ASE ANGLAI   ,976.49,0,785.62,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GB ,MARS     ,2021,PKO,2021C0342,1540792804404 90 10,BENALIOUA,AHMED,2  RUE DEGAS,95120,ERMONT,  100  FRANCE,, Ahmed.Benalioua@ac-versailles.fr,20/07/1954
+,   ETRANGER   ,                                          ,   ALGERIE                      , ANG.LETTRE   ,1964.9,403.68,1561.22,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GE ,MARS     ,2021,PKO,2021C0430,1680499397085 56 00,ZAKARIA,HOUSSEN,52  R   DU GLE DELESTRAINT,75016,PARIS,  100  FRANCE,, Houssen.Zakaria@ac-versailles.fr,01/04/1968
+,Non trouvé,                                          ,   COMORES                      , HIST GEO     ,319.16,0,221.99,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GE ,MARS     ,2021,PKO,2021C0449,1710875112350 79 00,TRUCHET-SANTI,XAVIER,14  RUE DES ROUX,94240,L HAY LES ROSES,  100  FRANCE,, Xavier.Truchet-Santi@ac-versailles.fr,26/08/1971
+,   PARIS      ,         PARIS                            ,   FRANCE                       , NON SPECIA   ,75.23,0,57.74,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GA ,MARS     ,2021,PKO,2021C0450,1711299350135 39 10,ABOURAHIM,FOUAD,45  R   CHATEAU D RENTIERS,75013,PARIS,  100  FRANCE,, Fouad.Abourahim1@ac-versailles.fr,31/12/1971
+,Non trouvé,                                          ,   MAROC                        , INSTIT SES   ,6282.94,0,4814.39,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GA ,MARS     ,2021,PKO,2021C0581,1830799326162 64 10,AMOUSSOU,ABETCHI,4  CHE HENRI MATISSE,78500,SARTROUVILLE,  100  FRANCE,, Abetchi.Amoussou@ac-versailles.fr,26/07/1983
+,Non trouvé,                                          ,   COTE D IVOIRE                , TECHNOLOGI   ,1372.52,0,1103.10,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GE ,MARS     ,2021,PKO,2021C0589,1840799404277 82 00,TICE,TROY,9  AV  MINERVE,91170,VIRY CHATILLON,  100  FRANCE,, Troy.Tice@ac-versailles.fr,26/07/1984
+,Non trouvé,                                          ,   ETATS UNIS                   , ANGLAIS      ,1955.2,0,1579.31,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GC ,MARS     ,2021,PKO,2021C0594,1850392019023 31 00,COLOMB,CLEMENT,56B R   PASTEUR,91290,LA NORVILLE,  100  FRANCE,, Clement.Colomb@ac-versailles.fr,04/03/1985
+,   HTSSEINE  ,         CHATENAY MALABRY                 ,   FRANCE                       , LET HIST G   ,662.85,223,439.85,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE08GL ,MARS     ,2021,PKO,2021C0698,1940699034085 04 10,MOYANO ROJAS,RAFAEL,1ER ETAGE PORTE B 12  RUE DE THIONVILLE,75019,PARIS,  100  FRANCE,, Rafael.Moyano-Rojas@ac-versailles.fr,24/06/1994
+,Non trouvé,                                          ,   ESPAGNE                      , ESPAGNOL     ,571.5,0,441.72,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GL ,MARS     ,2021,PKO,2021C0709,1951078498254 77 00,MOULAY,ADIL,8  ALL DE BERLIN SPANDAU,92600,ASNIERES SUR SEINE,  100  FRANCE,, Adil.Moulay@ac-versailles.fr,05/10/1995
+,   YVELINES   ,         POISSY                           ,   FRANCE                       , SC.ECO.SOC   ,181.8,0,146.11,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GH ,MARS     ,2021,PKO,2021C0743,2580678367001 42 00,KASSIS,ANNICK,14  RUE DU POTAGER,78450,VILLEPREUX,  100  FRANCE,, Annick.Kassis@ac-versailles.fr,09/06/1958
+,   YVELINES   ,         MAREIL MARLY                     ,   FRANCE                       , ECO.GE.VEN   ,1958.65,0,1495.94,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GG ,MARS     ,2021,PKO,2021C0755,2581075066192 05 00,FRANCK,NADINE,15  AV  DU REPOS DE DIANE,95160,MONTMORENCY,  100  FRANCE,, Nadine.Franck@ac-versailles.fr,24/10/1958
+,   SNESTDE. ,         ST DENIS                         ,   FRANCE                       , SC.T.BIO.S   ,127.53,0,94.43,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GL ,MARS     ,2021,PKO,2021C1842,2770899109M01    00,MULLER,ANNETT,2  AV  CARNOT,78110,SAINT GERMAIN EN LAYE,  100  FRANCE,, Annett.Muller@ac-versailles.fr,21/08/1977
+,Non trouvé,                                          ,   ALLEMAGNE                    , ALLEMAND     ,84.05,0,67.56,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GL ,MARS     ,2021,PKO,2021C2100,2810692032097 52 00,PERCHERON,SANDRINE,9B IMP DU POTAGER,91200,ATHIS-MONS,  100  FRANCE,, Sandrine.Percheron@ac-versailles.fr,26/06/1981
+,   HTSSEINE  ,         FONTENAY AUX ROSES               ,   FRANCE                       , ECO.GE.VEN   ,697.05,0,580.55,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GH ,MARS     ,2021,PKO,2021C2260,2830699333008 39 00,KLEIN,PRITY,12B AV  VOLTAIRE,78600,MAISONS LAFITTE,  100  FRANCE,, Prity.Klein1@ac-versailles.fr,18/06/1983
+,Non trouvé,                                          ,   MADAGASCAR                   , ECO.GE.COM   ,819.9,0,599.60,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE05GM ,MARS     ,2021,PKO,2021C2353,2840999410030 34 00,PLATEL,GERMINA,41  RUE DU BAS COUDRAY,91100,CORBEIL ESSONNES,  100  FRANCE,, Germina.Platel@ac-versailles.fr,05/09/1984
+,Non trouvé,                                          ,   HAITI                        , MATH SC PH   ,371.43,0,364.86,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GK ,MARS     ,2021,PKO,2021C2602,2881178646031 49 00,PORTELLI,ELISABETH,6  R   MONTBAURON,78000,VERSAILLES,  100  FRANCE,, Elisabeth.Portelli@ac-versailles.fr,03/11/1988
+,   YVELINES   ,         VERSAILLES                       ,   FRANCE                       , PERS   ADM   ,501.15,125,354.34,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GG ,MARS     ,2021,PKO,2021C2687,2900999352A01    00,HAMADOUCHE,AMIRA,REISDENCE LA FOSSE AUX LOUPS 43  AV  DE LA PAIX,94260,FRESNES,  100  FRANCE,, Amira.Hamadouche@ac-versailles.fr,16/09/1990
+,Non trouvé,                                          ,   ALGERIE                      , TECHNOLOGI   ,7968.8,0,5078.19,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GK ,MARS     ,2021,PKO,2021C2775,2911099134883 53 00,RODRIGUEZ CARIDE,CRISTINA,APPT 202 BAT B ESC 1 4  ALL JEAN LI SEN LI,95110,SANNOIS,  100  FRANCE,, Cristina.Rodriguez-Caride@ac-versailles.fr,11/10/1991
+,Non trouvé,                                          ,   ESPAGNE                      , ESPAGNOL     ,839.16,0,670.25,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GJ ,MARS     ,2021,PKO,2021C2820,2921078545243 36 00,MENEZ,GWENDOLINE,3  R   D ANGOULEME,78000,VERSAILLES,  100  FRANCE,, Gwendoline.Menez@ac-versailles.fr,12/10/1992
+,   YVELINES   ,         ST CYR L ECOLE                   ,   FRANCE                       , MATHEMATIQ   ,7141.12,0,5272.18,Non trouvé,Non trouvé,date envoi DAF,
+DPE2,517 078,PE02GB ,MARS     ,2021,PKO,2021C2917,2951177186265 10 00,BOULAUD,LEA,30  AV  RENE CASSIN,77127,LIEUSAINT,  100  FRANCE,, Lea.Boulaud@ac-versailles.fr,11/11/1995
+,   SEINEMAR. ,         FONTAINEBLEAU                    ,   FRANCE                       , EDU.ORI      ,75,13.4,61.60,Non trouvé,Non trouvé,date envoi DAF,

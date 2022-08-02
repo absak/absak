@@ -1,0 +1,1045 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Tests" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_PdfFilesPath" Type="InArgument(x:String)" />
+    <x:Property Name="In_Main_DT" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="in_Login_EPP" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password_EPP" Type="InArgument(ss:SecureString)" />
+    <x:Property Name="in_Ip_adresse_Putty" Type="InArgument(x:String)" />
+    <x:Property Name="out_QTV_month" Type="OutArgument(x:String)" />
+    <x:Property Name="out_QTV_year" Type="OutArgument(x:Int32)" />
+  </x:Members>
+  <this:Tests.in_Login_EPP>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Tests.in_Login_EPP>
+  <this:Tests.in_Password_EPP>
+    <InArgument x:TypeArguments="ss:SecureString" />
+  </this:Tests.in_Password_EPP>
+  <this:Tests.in_Ip_adresse_Putty>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Tests.in_Ip_adresse_Putty>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>2241.33333333333,8677.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Tests_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="36">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Tests" sap:VirtualizedContainerService.HintSize="2251.33333333333,8612.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="Counter_Label" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of string)]" Name="List_labels" />
+      <Variable x:TypeArguments="scg:List(x:Double)" Default="[new List(Of Double)]" Name="List_Initial_Amount" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Extraire les informations necessaire de chaque fichier PDF " sap:VirtualizedContainerService.HintSize="2209.33333333333,8366.66666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_14" Values="[Directory.GetFiles( In_PdfFilesPath, &quot;*.pdf&quot;)]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="2172.66666666667,8238.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_88">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="PDF_Split" />
+              <Variable x:TypeArguments="x:String" Name="SplitterdPdfText" />
+              <Variable x:TypeArguments="x:String" Name="PKO_QTV_Month" />
+              <Variable x:TypeArguments="x:Int32" Name="PKO_QTV_Year" />
+              <Variable x:TypeArguments="x:String" Name="PKOQTVInvoiceNbr" />
+              <Variable x:TypeArguments="x:String" Name="PKOQTVManagementCode" />
+              <Variable x:TypeArguments="x:String" Name="BopCode" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitRecupName" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitrecupInfoAgent" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitRecupFinalName" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitRecupFinalNameSplitN" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitedNSEE" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitForAdress1" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitForAdress2" />
+              <Variable x:TypeArguments="s:String[]" Name="SplitForAdress3" />
+              <Variable x:TypeArguments="s:String[]" Name="strAdresszarray" />
+              <Variable x:TypeArguments="x:Int32" Default="3" Name="intCounterCommune" />
+              <Variable x:TypeArguments="x:String" Name="INSEE_Nbr" />
+              <Variable x:TypeArguments="x:String" Name="strBirthdate" />
+              <Variable x:TypeArguments="x:String" Name="strAdress" />
+              <Variable x:TypeArguments="x:String" Name="strPostalNbr" />
+              <Variable x:TypeArguments="x:String" Name="strCommune" />
+              <Variable x:TypeArguments="s:Object[]" Name="DPE" />
+              <Variable x:TypeArguments="s:Object[]" Name="PGE_Paye" />
+              <Variable x:TypeArguments="x:String" Name="PDF_Type" />
+              <Variable x:TypeArguments="x:String" Name="Agent_FirstName" />
+              <Variable x:TypeArguments="x:String" Name="Agent_LastdName" />
+              <Variable x:TypeArguments="x:String" Name="Initial_amount" />
+              <Variable x:TypeArguments="x:String" Default=" " Name="Amount_of_withholding_tax" />
+              <Variable x:TypeArguments="x:String" Name="Finale_amount_notified" />
+              <Variable x:TypeArguments="s:Object[]" Name="Labels" />
+              <Variable x:TypeArguments="x:String" Name="BOP" />
+              <Variable x:TypeArguments="s:Object[]" Name="SendingtoDAFdate" />
+              <Variable x:TypeArguments="s:String[]" Name="Splitted_for_libelle" />
+              <Variable x:TypeArguments="s:String[]" Name="Splitted_for_label1" />
+              <Variable x:TypeArguments="x:String" Name="Labels_all" />
+              <Variable x:TypeArguments="s:String[]" Name="Splitted_for_InitialA" />
+              <Variable x:TypeArguments="x:Int32" Default="1" Name="Counter_InitialA" />
+              <Variable x:TypeArguments="x:String" Name="Initial_amount_all" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[item]" sap:VirtualizedContainerService.HintSize="2130.66666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="ReadPDFText_3" Range="All" Text="[SplitterdPdfText]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_31" Text="[&quot; Mois =&quot;+SplitterdPdfText.substring(SplitterdPdfText.IndexOf(&quot;MOIS DE :&quot;)+9,9)]" />
+            <Assign DisplayName="Saisie du Moi en cour" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_40">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[PKO_QTV_Month]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitterdPdfText.substring(SplitterdPdfText.IndexOf("MOIS DE :")+9,9)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Saisie du mois en cour pour le traitement du robot 2" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_81">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[out_QTV_month]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[PKO_QTV_Month]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Saisie de l'année du QTV" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_24">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[PKO_QTV_Year]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[Cint(SplitterdPdfText.substring(SplitterdPdfText.IndexOf("MOIS DE :")+18,23).Trim)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Saisie de l'annee en cour pour le traitement du robot 2" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_82">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[out_QTV_year]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[PKO_QTV_Year]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_32" Text="[&quot;Year =&quot;+SplitterdPdfText.substring(SplitterdPdfText.IndexOf(&quot;MOIS DE :&quot;)+18,23)]" />
+            <Assign DisplayName="Saisie du numéro d'enregistrement" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_41">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[PKOQTVInvoiceNbr]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitterdPdfText.Substring(SplitterdPdfText.IndexOf("REF.DE LA FACTURE:") + 26, 9)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_33" Text="[&quot; N° d'enregistrement =&quot;+SplitterdPdfText.Substring(SplitterdPdfText.IndexOf(&quot;REF.DE LA FACTURE:&quot;) + 26, 9)]" />
+            <Assign DisplayName="Saisie code de géstion" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_27">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[PKOQTVManagementCode]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitterdPdfText.Substring(SplitterdPdfText.IndexOf("SERVICE PRESCRIPTEUR:") + 35, 7)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_34" Text="[&quot;Code gestion =&quot;+SplitterdPdfText.Substring(SplitterdPdfText.IndexOf(&quot;SERVICE PRESCRIPTEUR:&quot;) + 35, 7)]" />
+            <Assign DisplayName="Saisie du code BOP " sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_28">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[BopCode]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitterdPdfText.Substring(SplitterdPdfText.IndexOf("PGM BUD :") +10 , 4).Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_35" Text="[&quot;Code BOP =&quot;+SplitterdPdfText.Substring(SplitterdPdfText.IndexOf(&quot;PGM BUD :&quot;) +10 , 4).Trim]" />
+            <Assign DisplayName="Saisie du code BOP" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_48">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[BOP]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitterdPdfText.Substring(SplitterdPdfText.IndexOf("PGM BUD :") +10 , 4).Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Saisie du type du PDF" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_69">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[PDF_Type]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">QTV</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Sequence DisplayName="Récupération du nom /Prénom" sap:VirtualizedContainerService.HintSize="2130.66666666667,450.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_130">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="s:String[]" Name="Splitted_for_name" />
+                <Variable x:TypeArguments="s:String[]" Name="Splitted_for_name_newline" />
+                <Variable x:TypeArguments="s:String[]" Name="Split_for_extracting_name_surname" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_29">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:String[]">[SplitrecupInfoAgent]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:String[]">[SplitterdPdfText.Split({"REFERENCES DU DEBITEUR :","MONTANT NET DU :"},StringSplitOptions.None)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <If Condition="[SplitrecupInfoAgent(0).Contains(&quot;IDENT TECHNIQUE DU TIERS CHORUS&quot;)]" DisplayName=" la le text contient &quot;IDENT TECHNIQUE DU TIERS CHORUS&quot; " sap:VirtualizedContainerService.HintSize="262,52.6666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,665.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_135">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Splitter sur &quot;|&quot;" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_49">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:String[]">[Splitted_for_name]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:String[]">[SplitrecupInfoAgent(0).Split({"IDENT TECHNIQUE DU TIERS CHORUS :","N INSEE :"},StringSplitOptions.None)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_50">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:String[]">[Splitted_for_name_newline]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:String[]">[Splitted_for_name(1).Split(CChar(vblf))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="saisie du nom" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_51">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Agent_FirstName]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(Splitted_for_name_newline(2).Replace(" I ","").Replace("*","").TrimEnd.TrimStart,"^\w+").Value]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_67" Text="[&quot;Agent_FirstName =&quot;+Agent_FirstName]" />
+                    <Assign DisplayName="saisie du Prenom" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_53">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Agent_LastdName]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(Splitted_for_name_newline(2).Replace(" I ","").Replace("*","").TrimEnd.TrimStart,"(?&lt;=^\w+\s).+").Value.TrimStart]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_68" Text="[&quot;Agent_SecondtName =&quot;+ Agent_LastdName]" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,665.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_136">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Splitter sur &quot;|&quot;" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_54">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:String[]">[Splitted_for_name]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:String[]">[SplitrecupInfoAgent(0).Split({"REFERENCES DU DEBITEUR","N INSEE :"},StringSplitOptions.None)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_55">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:String[]">[Splitted_for_name_newline]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:String[]">[Splitted_for_name(1).Split(CChar(vblf))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="saisie du nom" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_56">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Agent_FirstName]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(Splitted_for_name_newline(2).Replace(" I ","").Replace("*","").TrimEnd.TrimStart,"^\w+").Value]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_71" Text="[&quot;Agent_FirstName =&quot;+Agent_FirstName]" />
+                    <Assign DisplayName="saisie du Prenom" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_57">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Agent_LastdName]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(Splitted_for_name_newline(2).Replace(" I ","").Replace("*","").TrimEnd.TrimStart,"(?&lt;=^\w+\s).+").Value.TrimStart]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_72" Text="[&quot;Agent_SecondtName =&quot;+ Agent_LastdName]" />
+                  </Sequence>
+                </If.Else>
+              </If>
+              <Assign DisplayName="Splitter pour recup nom/prenom 1" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_30">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:String[]">[SplitRecupName]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:String[]">[Split(SplitrecupInfoAgent(0), " I ")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Splitter pour recup nom/prenom 2" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_31">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:String[]">[SplitRecupFinalName]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:String[]">[Split(SplitRecupName(8), "REFERENCES DU DEBITEUR")]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <Assign DisplayName="Récupération du bloc INSEE" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_33">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[SplitedNSEE]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[SplitterdPdfText.Split({"N INSEE :", "Né(E)LE"}, StringSplitOptions.None )]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Saisie du Numéro de sécurité sociale" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_42">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[INSEE_Nbr]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitedNSEE(1).Trim.Substring(0,16)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_45" Text="[&quot;Numero INSEE =&quot;+SplitedNSEE(1).Trim.Substring(0,16)]" />
+            <Assign DisplayName="Saisie de la date de naisssance " sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_43">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[strBirthdate]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitedNSEE(2).Trim.Substring(0,10)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_47" Text="[&quot;Date de naissance =&quot;+SplitedNSEE(2).Trim.Substring(0,10)]" />
+            <Assign DisplayName="Splitter pour avoire l'adresse 1" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_34">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[SplitForAdress1]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[SplitterdPdfText.Split({"GRP DE COMPTES","MONTANT NET DU :"},StringSplitOptions.None)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2130.66666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_60">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="476,371.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_105">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,279.333333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_25" Values="[SplitForAdress1]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:String">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_48" Text="[&quot;Adresse items =&quot;+item]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                  </ui:ForEach>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Assign DisplayName="Splitter pour avoire l'adresse 2" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_35">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[SplitForAdress2]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[split(SplitForAdress1(1).Trim, "CPTE BUDGETAIRE")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Splitter pour avoire l'adresse 3" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_36">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[SplitForAdress3]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[split(SplitForAdress2(1).Trim, " I ")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2130.66666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_63">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="476,144.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_27" Values="[SplitForAdress3]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:String">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_107">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_51" Text="[&quot;adress item =&quot;+item.Trim]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Assign DisplayName="Saisie de l'adresse complete" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_44">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[strAdress]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[split(SplitForAdress3(0), System.environment.newline)(1).Replace("* ","").TrimStart]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_52" Text="[&quot;Adresse one =&quot;+split(SplitForAdress3(0), System.environment.newline)(1).Replace(&quot;* &quot;,&quot;&quot;).TrimStart]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2130.66666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_67">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="476,144.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_32" Values="[split(SplitForAdress3(1), Environment.NewLine)]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:String">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_54" Text="[&quot;adresse twe item =&quot;+item]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Assign DisplayName="Splitter pour extraire code postale/commune" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_37">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[strAdresszarray]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[System.Text.RegularExpressions.Regex.Split( split(SplitForAdress3(1), Environment.NewLine)(2), "\s{1,5}")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Saisie Code postale" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_45">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[strPostalNbr]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[strAdresszarray(2)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_53" Text="[&quot;Code postale =&quot;+strAdresszarray(2)]" />
+            <ui:CommentOut sap2010:Annotation.AnnotationText="Boucle while afin d'extraire la cummune: a tester" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2130.66666666667,98" sap2010:WorkflowViewState.IdRef="CommentOut_78">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="382.666666666667,508" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Boucle while afin d'extraire la cummune: a tester" Condition="[intCounterCommune &lt; (strAdresszarray.count)]" DisplayName="While" sap:VirtualizedContainerService.HintSize="340.666666666667,416" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                    <ui:InterruptibleWhile.Body>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,216" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <AddToCollection x:TypeArguments="x:String" Collection="[ListCommune]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[strAdresszarray(intCounterCommune)]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_39">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[intCounterCommune]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[intCounterCommune +1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </ui:InterruptibleWhile.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InterruptibleWhile>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Assign DisplayName="Saisie de la commune" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_46">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[strCommune]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[(strAdresszarray(3)+" "+strAdresszarray(4)+" "+strAdresszarray(5)+" "+strAdresszarray(6)+" "+strAdresszarray(7)).TrimEnd]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_55" Text="[&quot;Commune  =&quot;+(strAdresszarray(3)+&quot; &quot;+strAdresszarray(4)+&quot; &quot;+strAdresszarray(5)+&quot; &quot;+strAdresszarray(6)+&quot; &quot;+strAdresszarray(7)).TrimEnd]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_62" Text="[&quot;Net Amount = &quot;+SplitrecupInfoAgent(1).Substring(0, SplitrecupInfoAgent(1).IndexOf(&quot; a la date du&quot;))]" />
+            <Assign DisplayName="Saisie Du montant Net  " sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_47">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Finale_amount_notified]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[SplitrecupInfoAgent(1).Substring(0, SplitrecupInfoAgent(1).IndexOf(" a la date du"))]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Splitter pour recuperation des libéllés" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_58">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[Splitted_for_libelle]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Split(SplitterdPdfText, "Indu sur rémunération issu de paye")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2130.66666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_79">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="476,144.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_138">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_33" Values="[Splitted_for_libelle]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:String">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_137">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_73" Text="[&quot; split libéllé =&quot;+item]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Assign DisplayName="Splitter pour extraction de labels" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_59">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[Splitted_for_label1]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Splitted_for_libelle(1).Split({"issu paye de", "restes à recouvrer"}, StringSplitOptions.None)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_77" Text="[&quot; Count splited  labels =&quot;+Splitted_for_label1.Count.ToString]" />
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Counter_Label &lt; ( (Splitted_for_label1.Count -1 ))]" DisplayName="While" sap:VirtualizedContainerService.HintSize="2130.66666666667,1985.33333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="2094,1816" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="Corrected_Label" />
+                    <Variable x:TypeArguments="x:String" Name="Initial_label" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign DisplayName="saisie lebelle initiale" sap:VirtualizedContainerService.HintSize="2052,62" sap2010:WorkflowViewState.IdRef="Assign_75">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[Initial_label]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Splitted_for_label1(Counter_Label).Split(CChar(vblf))(2).Replace("*","")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <If Condition="[Initial_label.contains(&quot;Ind.&quot;)]" sap:VirtualizedContainerService.HintSize="2052,1458" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="304,254.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_157">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign DisplayName="saisie labél complet" sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_70">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Corrected_Label]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">Indemnité</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_76">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Initial_label]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String" xml:space="preserve">[Initial_label.Replace("Ind.",  Corrected_Label)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="1702,1297.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_158">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[Initial_label.contains(&quot;Majo.&quot;)]" sap:VirtualizedContainerService.HintSize="1660,1205.33333333333" sap2010:WorkflowViewState.IdRef="If_3">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="304,256" sap2010:WorkflowViewState.IdRef="Sequence_159">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign DisplayName="Saisie label complet" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_71">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[Corrected_Label]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">Majoration</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_77">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[Initial_label]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[Initial_label.Replace("Majo.",  Corrected_Label)]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="1310,1044.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_160">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[Initial_label.contains(&quot;ijss&quot;)]" sap:VirtualizedContainerService.HintSize="1268,952.666666666667" sap2010:WorkflowViewState.IdRef="If_4">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="304,256" sap2010:WorkflowViewState.IdRef="Sequence_161">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign DisplayName="saisie label complet" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_72">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[Corrected_Label]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">indemnité journalière de sécurité sociale</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_78">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[Initial_label]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String" xml:space="preserve">[Initial_label.Replace("ijss",  Corrected_Label)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="918,792" sap2010:WorkflowViewState.IdRef="Sequence_162">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If Condition="[Initial_label.contains(&quot;enseignt&quot;)]" sap:VirtualizedContainerService.HintSize="876,700" sap2010:WorkflowViewState.IdRef="If_5">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="304,256" sap2010:WorkflowViewState.IdRef="Sequence_163">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_73">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[Corrected_Label]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">enseignement</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_79">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[Initial_label]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String" xml:space="preserve">[Initial_label.Replace("enseignt",  Corrected_Label)]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="526,539.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_164">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If Condition="[Initial_label.contains(&quot;Supp familial traitement&quot;)]" sap:VirtualizedContainerService.HintSize="484,447.333333333333" sap2010:WorkflowViewState.IdRef="If_6">
+                                            <If.Then>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="304,256" sap2010:WorkflowViewState.IdRef="Sequence_165">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign DisplayName="Saisie label complet" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_74">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Corrected_Label]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">Supplément familial traitement</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_80">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Initial_label]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String" xml:space="preserve">[Initial_label.Replace("Supp familial traitement",  Corrected_Label)]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                              </Sequence>
+                                            </If.Then>
+                                            <If.Else>
+                                              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_166">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Sequence>
+                                            </If.Else>
+                                          </If>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[List_labels]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="2052,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[Initial_label]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="2052,62" sap2010:WorkflowViewState.IdRef="Assign_61">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[Counter_Label]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[Counter_Label +2]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <Assign sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_63">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Labels_all]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[String.Join( Environment.NewLine, List_labels.ToArray)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ClearCollection x:TypeArguments="x:String" Collection="[List_labels]" DisplayName="Clear Collection" sap:VirtualizedContainerService.HintSize="2130.66666666667,22" sap2010:WorkflowViewState.IdRef="ClearCollection`1_1" />
+            <Assign DisplayName="Rénitialiser le compteur" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_62">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[Counter_Label]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Splitter pour calculer le montant initiale" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_64">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[Splitted_for_InitialA]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Split(SplitterdPdfText, "montant initial de la dette")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2130.66666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_90">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="476,144.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_156">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_37" Values="[Splitted_for_InitialA]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:String">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_154">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_82" Text="[&quot; splitted for amount =&quot;+item]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Counter_InitialA &lt; Splitted_for_InitialA.Count]" DisplayName="While" sap:VirtualizedContainerService.HintSize="2130.66666666667,385.333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,216" sap2010:WorkflowViewState.IdRef="Sequence_151">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:Double" Collection="[List_Initial_Amount]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_5" Item="[Cdbl(Splitted_for_InitialA( Counter_InitialA).Split(CChar(vblf))(0).trim.Replace(&quot;:&quot;,&quot;&quot;).Replace(&quot;*&quot;,&quot;&quot;).Replace(&quot;,&quot;,&quot;.&quot;).Trim.Replace(&quot; &quot;,&quot;&quot;))]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_65">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[Counter_InitialA]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[Counter_InitialA+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <Assign sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_66">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Initial_amount_all]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[String.Join( "-", List_Initial_Amount.ToArray)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_81" Text="[&quot;Initial_amount_all =&quot;+Initial_amount_all]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="2130.66666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_83" Text="[&quot;summ of IA =&quot;+ List_Initial_Amount.Sum(function(x) x).tostring]" />
+            <Assign DisplayName="Saisie de la somme initiale" sap:VirtualizedContainerService.HintSize="2130.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_68">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Initial_amount]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[List_Initial_Amount.Sum(Function(x) x).ToString.replace(".",",")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ClearCollection x:TypeArguments="x:Double" Collection="[List_Initial_Amount]" DisplayName="Clear Collection" sap:VirtualizedContainerService.HintSize="2130.66666666667,22" sap2010:WorkflowViewState.IdRef="ClearCollection`1_5" />
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{DPE, PKOQTVManagementCode, &quot;PGE_Paye&quot;,  PKO_QTV_Month, PKO_QTV_Year, PDF_Type,  PKOQTVInvoiceNbr, INSEE_Nbr, Agent_FirstName, Agent_LastdName, strAdress,  strPostalNbr, strCommune, &quot;France&quot;, &quot;Conformité adresse&quot;,&quot;email pro&quot;, strBirthdate,&quot;Departement de naissance&quot;,&quot;Commune de naissance&quot;,&quot;pays de naissance&quot;, &quot;Discipline&quot;, Initial_amount, &quot;0&quot;, Finale_amount_notified,Labels_all,BOP, SendingtoDAFdate   }]" DataTable="[In_Main_DT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="2130.66666666667,190" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:AddDataRow>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="2209.33333333333,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Modules Réutilisables\Extraction EPP.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="In_Login">[in_Login_EPP]</InArgument>
+        <InArgument x:TypeArguments="ss:SecureString" x:Key="In_Password">[in_Password_EPP]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="In_IP_Adress">[in_Ip_adresse_Putty]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="Out_Birth_country" />
+        <OutArgument x:TypeArguments="x:String" x:Key="Out_Birth_Department" />
+        <OutArgument x:TypeArguments="x:String" x:Key="Out_Birth_commune" />
+        <OutArgument x:TypeArguments="x:String" x:Key="Out_PGE" />
+        <OutArgument x:TypeArguments="x:String" x:Key="Out_email_Pro" />
+        <OutArgument x:TypeArguments="x:String" x:Key="Out_adresse" />
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_dashboard_dt">[In_Main_DT]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

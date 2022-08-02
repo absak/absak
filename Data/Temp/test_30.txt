@@ -1,0 +1,129 @@
+  A  RECOUVRER  A  LA  DATE  DU  25 03 2021                                785,62*
+REF ETAT :  PKO  TOTAL      UP PAIGKMREF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   58     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 517 078     POSTE : 0951727   LYCEE FOSSES    CHARLES BAUDELAIRE                           *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1540792804404 90 10  I      5110               2021C0342      I        0780              I    90      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  BENALIOUA                AHMED                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*         2  RUE DEGAS                                          I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      95120 ERMONT                                             I  MONTANT DE LA PROPOSITION DE TITRE  :         1561,22           *
+*      ERMONT                                                   I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 60 YG              I                I           I           I           I           I             I           I            *
+* TRAITEMENT BRUT          I         908,85 I      0,00 I      0,00 I      0,00 I      0,00 I      313,68 I       0,00I     595,17 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A0830 I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 60 JA              I                I           I           I           I           I             I           I            *
+* ISOE PART FIXE           I          45,51 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I      45,51 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A0831 I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 60 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,02 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       0,02 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A0832 I                I           I           I           I           I             I           I            *
+* DU 10/11/2020         CARI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 60 YG              I                I           I           I           I           I             I           I            *
+* TRAITEMENT BRUT          I        1009,84 I      0,00 I      0,00 I      0,00 I      0,00 I       90,00 I       0,00I     919,84 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* FEVRIER   2021 2021B0247 I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 60 JA              I                I           I           I           I           I             I           I            *
+* ISOE PART FIXE           I           0,01 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       0,01 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* FEVRIER   2021 2021B0248 I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   59     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 517 078     POSTE : 0951727   LYCEE FOSSES    CHARLES BAUDELAIRE                           *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1540792804404 90 10  I      5110               2021C0342      I        0780              I    90      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  BENALIOUA                AHMED                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*         2  RUE DEGAS                                          I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      95120 ERMONT                                             I  MONTANT DE LA PROPOSITION DE TITRE  :         1561,22           *
+*      ERMONT                                                   I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 60 ZR              I                I           I           I           I           I             I           I            *
+* PREC. CARENCE IND. RESID.I           0,67 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       0,67 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A0833 I                I           I           I           I           I             I           I            *
+* DU 10/11/2020            I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+************************************************************************************************************************************
+*                          MONTANT  TOTAL  

@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SignaturePdf" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="754.666666666667,662" sap2010:WorkflowViewState.IdRef="SignaturePdf_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SignaturePdf" this:SignaturePdf.In_Word_Path="C:\Users\asaket\OneDrive - Capgemini\Desktop\Robot_IndusSurRemuneration\Data\Input\Fichiers de référence-template_TB_template courriel_signatures\Templates courriels\courrier PKO avec indu PRELEVE partiellement sur BS - précompte.doc" this:SignaturePdf.in_Signature="C:\Users\asaket\OneDrive - Capgemini\Desktop\Robot_IndusSurRemuneration\Data\Input\Fichiers de référence-template_TB_template courriel_signatures\Signatures\DPE7G.jpg" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_Word_Path" Type="InArgument(x:String)" />
+    <x:Property Name="in_Signature" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>778,600.666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SignaturePdf_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -27,6 +36,8 @@
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>UiPath.Word.Activities</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -60,28 +71,36 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SignaturePdf" sap:VirtualizedContainerService.HintSize="764.666666666667,597.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SignaturePdf" sap:VirtualizedContainerService.HintSize="552,536" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="Data\Input\Courriel templates et images signatures\courrier PKO avec indu PRELEVE partiellement sur BS - précompte.doc" sap:VirtualizedContainerService.HintSize="722.666666666667,505.333333333333" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="510,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[in_Signature]" />
+    <p:WordApplicationScope AutoSave="False" CreateNewFile="False" DisplayName="Word Application Scope" FilePath="[In_Word_Path]" sap:VirtualizedContainerService.HintSize="510,341.333333333333" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="476,396.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="476,232.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:WordAddImage Bookmark="{x:Null}" OccurrenceIndex="{x:Null}" DisplayName="Add Picture" sap:VirtualizedContainerService.HintSize="434,304.666666666667" sap2010:WorkflowViewState.IdRef="WordAddImage_1" ImagePath="Data\Input\Courriel templates et images signatures\DPE5.jpg" InsertRelativeTo="Text" Occurrence="Last" Position="Before" Text="renseignement complémentaire." />
+            <p:WordReplacePicture DisplayName="Replace Picture" sap:VirtualizedContainerService.HintSize="434,140.666666666667" sap2010:WorkflowViewState.IdRef="WordReplacePicture_2" PictureAltText="Signature" PicturePath="[in_Signature]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </p:WordReplacePicture>
           </Sequence>
         </ActivityAction>
       </p:WordApplicationScope.Body>

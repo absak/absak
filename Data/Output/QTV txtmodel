@@ -1,0 +1,669 @@
+REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page    3     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C0397                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  295 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 00-5110-2022C0397                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-10                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 1630575112HOLLANDERJEROME                                                                             *
+*  IDENT TECHNIQUE DU TIERS CHORUS : 1500699678                                                                                    *
+*                                                                                                                                  *
+*  HOLLANDER                JEROME                               I N INSEE :         1630575112394 88 00                           *
+*  Né(E)LE 23/05/1963                                            I GRP DE COMPTES :  ZTAE                                          *
+*                                                                I CPTE BUDGETAIRE : 485571                                        *
+*        12  COU DES CROISSELLES                                 I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      95280 JOUY LE MOUTIER                                     I MONTANT NET DU :         495,18  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6411110000                /   2022   /   RECPAYE078                                  439,88  €              *
+*                                                                                                                                  *
+*  002                 6412110000                /   2022   /   RECPAYE078                                   16,79  €              *
+*                                                                                                                                  *
+*  003                 6412210000                /   2022   /   RECPAYE078                                   19,67  €              *
+*                                                                                                                                  *
+*  004                 6414120000                /   2022   /   RECPAYE078                                   14,98  €              *
+*                                                                                                                                  *
+*  005                 6412884000                /   2022   /   RECPAYE078                                    3,86  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Il n est pas possible de transcoder l identifiant fonctionnel du tiers FOURNISSEUR.                                              *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page    4     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C0397                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  295 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Traitement brut issu paye de mars 2022                                                                                    *
+*        montant initial de la dette :  559,82                                                                                     *
+*        - dont recouvrements sur cotisations :  RC :  62,14                                                                       *
+*         CSG,CRDS :  17,28 Mutuelle :  40,52                                                                                      *
+*        restes à recouvrer :  439,88                                                                                              *
+*        *                                                                                                                         *
+*        Indemnite de residence issu paye de mars 2022                                                                             *
+*        montant initial de la dette :  16,79                                                                                      *
+*        restes à recouvrer :  16,79                                                                                               *
+*        *                                                                                                                         *
+*        Supp familial traitement issu paye de mars 2022                                                                           *
+*        montant initial de la dette :  19,67                                                                                      *
+*        restes à recouvrer :  19,67                                                                                               *
+*        *                                                                                                                         *
+*        Iso eleve part fixe issu paye de mars 2022                                                                                *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  14,98                                                                                      *
+*        restes à recouvrer :  14,98                                                                                               *
+*        *                                                                                                                         *
+*        Ind. compensatrice csg issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  3,86                                                                                       *
+*        restes à recouvrer :  3,86                                                                                                *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page    5     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C0519                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  245 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 20-5110-2022C0519                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-02                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 1770178498SOUGRATISMAEL                                                                               *
+*  IDENT TECHNIQUE DU TIERS CHORUS : 1500875386                                                                                    *
+*                                                                                                                                  *
+*  SOUGRAT                  ISMAEL                               I N INSEE :         1770178498125 71 20                           *
+*  Né(E)LE 26/01/1977                                            I GRP DE COMPTES :  ZTAE                                          *
+*                                                                I CPTE BUDGETAIRE : 485571                                        *
+*         5  PL  GEORGES BRASSENS                                I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      78260 ACHERES                                             I MONTANT NET DU :      13 722,69  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6411110000                /   2022   /   RECPAYE078                               13 114,45  €              *
+*                                                                                                                                  *
+*  002                 6412110000                /   2022   /   RECPAYE078                                  497,64  €              *
+*                                                                                                                                  *
+*  003                 6412884000                /   2022   /   RECPAYE078                                  110,60  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Compte 1500875386 IDF1 est bloqué pour comptabilisation                                                                          *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page    6     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C0519                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  245 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Traitement brut issu paye de mars 2022                                                                                    *
+*        montant initial de la dette :  11 059,00                                                                                  *
+*        restes à recouvrer :  11 059,00                                                                                           *
+*        *                                                                                                                         *
+*        Traitement brut issu paye de mars 2022                                                                                    *
+*        montant initial de la dette :  5 529,50                                                                                   *
+*        - dont recouvrements sur cotisations :  RC :  1 841,34                                                                    *
+*         CSG,CRDS :  488,13 Mutuelle :  1 144,58                                                                                  *
+*        restes à recouvrer :  2 055,45                                                                                            *
+*        *                                                                                                                         *
+*        Indemnite de residence issu paye de mars 2022                                                                             *
+*        montant initial de la dette :  331,76                                                                                     *
+*        restes à recouvrer :  331,76                                                                                              *
+*        *                                                                                                                         *
+*        Indemnite de residence issu paye de mars 2022                                                                             *
+*        montant initial de la dette :  165,88                                                                                     *
+*        restes à recouvrer :  165,88                                                                                              *
+*        *                                                                                                                         *
+*        Ind. compensatrice csg issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  34,28                                                                                      *
+*        restes à recouvrer :  34,28                                                                                               *
+*        *                                                                                                                         *
+*        Ind. compensatrice csg issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEES ANTERIEURES                                                                                                 *
+*        montant initial de la dette :  76,32                                                                                      *
+*        restes à recouvrer :  76,32                                                                                               *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page    7     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C0566                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  245 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 00-5110-2022C0566                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-03                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 1820297229CILLADAVID                                                                                  *
+*  IDENT TECHNIQUE DU TIERS CHORUS : 1500686710                                                                                    *
+*                                                                                                                                  *
+*  CILLA                    DAVID                                I N INSEE :         1820297229005 50 00                           *
+*  Né(E)LE 02/02/1982                                            I GRP DE COMPTES :  ZTAE                                          *
+*      RESIDENCE LE RICHELIEU 2                                  I CPTE BUDGETAIRE : 485571                                        *
+*         9  BD  ABEL CORNATON                                   I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      91290 ARPAJON                                             I MONTANT NET DU :         144,74  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6412510000                /   2022   /   RECPAYE078                                  144,74  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Compte 1500686710 IDF1 est bloqué pour comptabilisation                                                                          *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page    8     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C0566                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  245 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Heures annees enseignt issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  127,72                                                                                     *
+*        restes à recouvrer :  127,72                                                                                              *
+*        *                                                                                                                         *
+*        Majo.1ere hsa enseignt issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  17,02                                                                                      *
+*        restes à recouvrer :  17,02                                                                                               *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   21     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C1433                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  517 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 00-5110-2022C1433                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-11                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 2730478640TUBIANAHELENE                                                                               *
+*  IDENT TECHNIQUE DU TIERS CHORUS : 1500941923                                                                                    *
+*                                                                                                                                  *
+*  TUBIANA                  HELENE                               I N INSEE :         2730478640044 63 00                           *
+*  Né(E)LE 22/04/1973                                            I GRP DE COMPTES :  ZTAE                                          *
+*                                                                I CPTE BUDGETAIRE : 485571                                        *
+*        14  RUE JACQUES BOYCEAU                                 I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      78000 VERSAILLES                                          I MONTANT NET DU :          89,66  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6411210000                /   2022   /   RECPAYE078                                   89,66  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Compte 1500941923 IDF1 est bloqué pour comptabilisation                                                                          *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   22     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C1433                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  517 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Precompte ijss issu paye de mars 2022                                                                                     *
+*        IJSSMAL10 01AU12 01 2019                                                                                                  *
+*        montant initial de la dette :  123,87                                                                                     *
+*        - dont recouvrements sur cotisations :  SS :  9,05                                                                        *
+*         RC :  3,46 CSG,CRDS :  3,53                                                                                              *
+*         Mutuelle :  8,28                                                                                                         *
+*        restes à recouvrer :  89,66                                                                                               *
+*        *                                                                                                                         *
+*        *                                                                                                                         *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   33     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C2218                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  305 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 00-5110-2022C2218                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-02                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 2880206029MONETAURORE                                                                                 *
+*  IDENT TECHNIQUE DU TIERS CHORUS : 1500592535                                                                                    *
+*                                                                                                                                  *
+*  MONET                    AURORE                               I N INSEE :         2880206029180 34 00                           *
+*  Né(E)LE 29/02/1988                                            I GRP DE COMPTES :  ZTAE                                          *
+*      BATIMENT 4                                                I CPTE BUDGETAIRE : 485571                                        *
+*        16  R   DU PARC DENOAILLES                              I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      78100 SAINT GERMAIN EN LAYE                               I MONTANT NET DU :         969,74  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6411110000                /   2022   /   RECPAYE078                                  785,40  €              *
+*                                                                                                                                  *
+*  002                 6412110000                /   2022   /   RECPAYE078                                   30,35  €              *
+*                                                                                                                                  *
+*  003                 6412210000                /   2022   /   RECPAYE078                                    0,96  €              *
+*                                                                                                                                  *
+*  004                 6412510000                /   2022   /   RECPAYE078                                   68,96  €              *
+*                                                                                                                                  *
+*  005                 6414120000                /   2022   /   RECPAYE078                                   42,07  €              *
+*                                                                                                                                  *
+*  006                 6412884000                /   2022   /   RECPAYE078                                   10,80  €              *
+*                                                                                                                                  *
+*  007                 6414220000                /   2022   /   RECPAYE078                                   31,20  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   34     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C2218                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  305 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Il n est pas possible de transcoder l identifiant fonctionnel du tiers FOURNISSEUR.                                              *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   35     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C2218                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  305 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Traitement brut issu paye de mars 2022                                                                                    *
+*        montant initial de la dette :  1 053,88                                                                                   *
+*        - dont recouvrements sur cotisations :  RC :  116,98                                                                      *
+*         CSG,CRDS :  39,63 Mutuelle :  77,50                                                                                      *
+*        restes à recouvrer :  785,40                                                                                              *
+*        *                                                                                                                         *
+*        Indemnite de residence issu paye de mars 2022                                                                             *
+*        montant initial de la dette :  31,61                                                                                      *
+*        restes à recouvrer :  30,35                                                                                               *
+*        *                                                                                                                         *
+*        Supp familial traitement issu paye de mars 2022                                                                           *
+*        montant initial de la dette :  0,99                                                                                       *
+*        restes à recouvrer :  0,96                                                                                                *
+*        *                                                                                                                         *
+*        Heures annees enseignt issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  58,75                                                                                      *
+*        restes à recouvrer :  58,75                                                                                               *
+*        *                                                                                                                         *
+*        Isoe part fixe issu paye de mars 2022                                                                                     *
+*        montant initial de la dette :  43,82                                                                                      *
+*        restes à recouvrer :  42,07                                                                                               *
+*        *                                                                                                                         *
+*        Majo.1ere hsa enseignt issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  10,21                                                                                      *
+*        restes à recouvrer :  10,21                                                                                               *
+*        *                                                                                                                         *
+*        Ind. compensatrice csg issu paye de mars 2022                                                                             *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  11,25                                                                                      *
+*        restes à recouvrer :  10,80                                                                                               *
+*        *                                                                                                                         *
+*        "prime grenelle" issu paye de mars 2022                                                                                   *
+*        RAPPEL ANNEE COURANTE                                                                                                     *
+*        montant initial de la dette :  32,50                                                                                      *
+*        restes à recouvrer :  31,20                                                                                               *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   36     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C2351                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  M10 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 00-5110-2022C2351                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-08                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 2900421425GOBLEDMAUD                                                                                  *
+*  IDENT TECHNIQUE DU TIERS CHORUS : 1500962107                                                                                    *
+*                                                                                                                                  *
+*  GOBLED                   MAUD                                 I N INSEE :         2900421425029 56 00                           *
+*  Né(E)LE 22/04/1990                                            I GRP DE COMPTES :  ZTAE                                          *
+*                                                                I CPTE BUDGETAIRE : 485571                                        *
+*       117  BD  RICHARD LENOIR                                  I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      75011 PARIS                                               I MONTANT NET DU :         978,46  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6411110000                /   2022   /   RECPAYE078                                  950,68  €              *
+*                                                                                                                                  *
+*  002                 6414220000                /   2022   /   RECPAYE078                                   27,78  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Compte 1500962107 IDF1 est bloqué pour comptabilisation                                                                          *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   37     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C2351                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  M10 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Traitement brut issu paye de mars 2022                                                                                    *
+*        montant initial de la dette :  1 152,14                                                                                   *
+*        - dont recouvrements sur cotisations :  RC :  127,90                                                                      *
+*         CSG,CRDS :  32,33 Mutuelle :  75,82                                                                                      *
+*        restes à recouvrer :  883,85                                                                                              *
+*        *                                                                                                                         *
+*        Traitement brut issu paye de janvier 2022                                                                                 *
+*        montant initial de la dette :  828,10                                                                                     *
+*        - dont recouvrements sur cotisations :  RC :  91,92                                                                       *
+*        - dont recouvrements sur salaires :  667,00                                                                               *
+*        restes à recouvrer :  66,83                                                                                               *
+*        *                                                                                                                         *
+*        "prime grenelle" issu paye de janvier 2022                                                                                *
+*        RAPPEL ANNEES ANTERIEURES                                                                                                 *
+*        montant initial de la dette :  28,75                                                                                      *
+*        restes à recouvrer :  27,78                                                                                               *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   38     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C2456                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  517 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 00-5110-2022C2456                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-11                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 2920828134EZARRAGUILINDA                                                                              *
+*                                                                                                                                  *
+*  EZARRAGUI                LINDA                                I N INSEE :         2920828134254 93 00                           *
+*  Né(E)LE 06/08/1992                                            I GRP DE COMPTES :  ZTAE                                          *
+*                                                                I CPTE BUDGETAIRE : 485571                                        *
+*        10  R   DES POTERIES                                    I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      78160 MARLY LE ROI                                        I MONTANT NET DU :         106,05  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6412510000                /   2022   /   RECPAYE078                                  106,05  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Compte 1401278982 IDF1 est bloqué pour comptabilisation                                                                          *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   39     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C2456                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  517 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Hsa hors suppleances issu paye de mars 2022                                                                               *
+*        RAPPEL ANNEES ANTERIEURES                                                                                                 *
+*        montant initial de la dette :  114,03                                                                                     *
+*        - dont recouvrements sur cotisations :  SS :  9,99                                                                        *
+*         RC :  3,83 CSG,CRDS :  13,04                                                                                             *
+*        restes à recouvrer :  83,97                                                                                               *
+*        *                                                                                                                         *
+*        Majo 1ere hsa hors suppl. issu paye de mars 2022                                                                          *
+*        RAPPEL ANNEES ANTERIEURES                                                                                                 *
+*        montant initial de la dette :  22,80                                                                                      *
+*        restes à recouvrer :  22,08                                                                                               *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   40     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  REF.DE LA FACTURE: IDF1 / 2022C2457                                                                                             *
+*                                                                I                                                                 *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  295 078   PGM BUD : 0141 I COMPTABLE ASSIGNATAIRE :    078000                              *
+*                                                                I COMPTABLE DU RECOUVREMENT : 078000  / SIRET : 13001494700019    *
+*    ORDONNATEUR :         053 078                               I CENTRE DE PROFIT :    RECCHG0078                                *
+*    ACTIVITE :            01410000T202                          I AFFECTATION :         GRECCHOR078                               *
+*    CODE DEBITEUR REP :   15                                    I CENTRE DE COUT :      RECPAYE078                                *
+*    LIBELLE :             01 00-5110-2022C2457                  I CENTRE FINANCIER :    0141-VERS-RECT                            *
+*                                                                I DOMAINE FONCTIONNEL : 0141-01                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  REFERENCES DU DEBITEUR  : 2920878621BASHEERNATACHA                                                                              *
+*                                                                                                                                  *
+*  BASHEER                  NATACHA                              I N INSEE :         2920878621279 16 00                           *
+*  Né(E)LE 26/08/1992                                            I GRP DE COMPTES :  ZTAE                                          *
+*                                                                I CPTE BUDGETAIRE : 485571                                        *
+*         4  R   DES FLANDRES                                    I CPTE PCE CHORUS : 6418900000                                    *
+*                                                                I-----------------------------------------------------------------*
+*      95200 SARCELLES                                           I MONTANT NET DU :         189,66  a la date du  01 04 2022       *
+*                                                                I                                                                 *
+************************************************************************************************************************************
+*                                                  LIGNE(S) DE POSTE A SAISIR DANS CHORUS                                          *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* N°LIGNE  -  COMPTE PCE D ORIGINE DE LA DéPENSE / EXERCICE / CENTRE DE COûT                            MONTANT                    *
+*                                                                                                                                  *
+*  001                 6414220000                /   2022   /   RECPAYE078                                  189,66  €              *
+*                                                                                                                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+* TYPE D ANOMALIE :                                                                                                                *
+* TAV REJETE PAR CHORUS POUR LE MOTIF SUIVANT :                                                                                    *
+* Compte 1400652446 IDF1 est bloqué pour comptabilisation                                                                          *
+*                                                                                                                                  *
+************************************************************************************************************************************REF ETAT : QTV         UP PAIGKFE        EMIS PAR PAY009                                            DATE : 01 04 2022
+************************************************************************************************************************************
+*                         *                               TITRE A VALIDER - RETRAITEMENT MANUEL                      Page   41     *
+*  DDFIP                  *                                                                                                        *
+*  DES                    *                          TROP PERCU SUR REMUNERATION - ANNEE COURANTE                                  *
+*  YVELINES               *                                                                                                        *
+*                         *                                   MOIS DE : MARS      2022                                             *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+* REF.DE LA FACTURE: IDF1 / 2022C2457                                                                                              *
+*                                                                                                                                  *
+*    SERVICE PRESCRIPTEUR: 206 22 0006  295 078   PGM BUD : 0141                                                                   *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                               LIGNE(S) DE NOTE : DéTAIL DE LA SOMME à PAYER                                      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*                                                                                                                                  *
+*        Indu sur rémunération issu de paye de mars 2022 cf détail infra. µ                                                        *
+*        *                                                                                                                         *
+*        Ind. sujetion rep+ issu paye de mars 2022                                                                                 *
+*        RAPPEL ANNEES ANTERIEURES                                                                                                 *
+*        montant initial de la dette :  219,13                                                                                     *
+*        - dont recouvrements sur cotisations :  CSG,CRDS :  6,25                                                                  *
+*         Mutuelle :  14,64                                                                                                        *
+*        restes à recouvrer :  189,66                                                                                              *
+*        *                                                                                                                         *
+*        *                                                                                                                         *
+*        *                                                                                                                         *
+*                                                                                                                                  *
+************************************************************************************************************************************

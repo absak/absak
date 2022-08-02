@@ -1,21 +1,67 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Process" this:Process.in_path_pdf="Data\Input\Fichiers PKO-QTV" this:Process.In_Onglet_Dashboard_name="tableau de bord futur avec RPA" this:Process.In_Dashboard_Column_Nbr_Ref="30" this:Process.In_ExcelPathDashboard="C:\Users\asaket\OneDrive - Capgemini\Desktop\Robot_IndusSurRemuneration\Data\Input\Templates_TB\Tableau de bord par DPE V2.xlsx" this:Process.in_Flag_BeginR1="True" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Process" this:Process.In_Dashboard_Column_Nbr_Ref="30" this:Process.in_Flag_BeginR1="True" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
+    <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(x:String)" />
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
-    <x:Property Name="in_path_pdf" Type="InArgument(x:String)" />
-    <x:Property Name="In_Onglet_Dashboard_name" Type="InArgument(x:String)" />
     <x:Property Name="In_Dashboard_Column_Nbr_Ref" Type="InArgument(x:Int32)" />
     <x:Property Name="In_ExcelPathDashboard" Type="InArgument(x:String)" />
     <x:Property Name="in_Flag_BeginR1" Type="InArgument(x:Boolean)" />
-    <x:Property Name="Out_ExcelPathDashboard" Type="InArgument(x:String)" />
+    <x:Property Name="in_excel_dashboart_Name" Type="InArgument(x:String)" />
+    <x:Property Name="in_Login_EPP" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password_EPP" Type="InArgument(ss:SecureString)" />
+    <x:Property Name="in_Ip_adresse_Putty" Type="InArgument(x:String)" />
+    <x:Property Name="in_Onglet_Dashboard_name" Type="InArgument(x:String)" />
+    <x:Property Name="in_PKOQTV_pdf_path" Type="InArgument(x:String)" />
+    <x:Property Name="in_Referentiel_path_DPE" Type="InArgument(x:String)" />
+    <x:Property Name="in_Robot_main_input" Type="InArgument(x:String)" />
+    <x:Property Name="in_save_pko_word_Path" Type="InArgument(x:String)" />
+    <x:Property Name="in_courriel_model_path_folder" Type="InArgument(x:String)" />
+    <x:Property Name="in_curriel_save_Path" Type="InArgument(x:String)" />
+    <x:Property Name="in_sigature_path" Type="InArgument(x:String)" />
+    <x:Property Name="in_onglet_reference_DPE" Type="InArgument(x:String)" />
   </x:Members>
+  <this:Process.in_excel_dashboart_Name>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_excel_dashboart_Name>
+  <this:Process.in_Login_EPP>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_Login_EPP>
+  <this:Process.in_Password_EPP>
+    <InArgument x:TypeArguments="ss:SecureString" />
+  </this:Process.in_Password_EPP>
+  <this:Process.in_Ip_adresse_Putty>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_Ip_adresse_Putty>
+  <this:Process.in_Onglet_Dashboard_name>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_Onglet_Dashboard_name>
+  <this:Process.in_PKOQTV_pdf_path>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_PKOQTV_pdf_path>
+  <this:Process.in_Referentiel_path_DPE>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_Referentiel_path_DPE>
+  <this:Process.in_Robot_main_input>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_Robot_main_input>
+  <this:Process.in_save_pko_word_Path>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_save_pko_word_Path>
+  <this:Process.in_courriel_model_path_folder>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_courriel_model_path_folder>
+  <this:Process.in_sigature_path>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_sigature_path>
+  <this:Process.in_onglet_reference_DPE>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Process.in_onglet_reference_DPE>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>686,984.666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>778,984.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="35">
+    <scg:List x:TypeArguments="x:String" Capacity="36">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -51,10 +97,11 @@
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>System.Globalization</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -86,6 +133,8 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="696,920" sap2010:WorkflowViewState.IdRef="Sequence_24">
@@ -96,7 +145,9 @@
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart sap:VirtualizedContainerService.HintSize="654,828" sap2010:WorkflowViewState.IdRef="Flowchart_2">
       <Flowchart.Variables>
-        <Variable x:TypeArguments="x:String" Name="In_Dashboard_Excelfile_Path" />
+        <Variable x:TypeArguments="x:String" Name="Robot_Desktop_folder_path" />
+        <Variable x:TypeArguments="x:String" Name="PKO_QTV_month" />
+        <Variable x:TypeArguments="x:Int32" Name="PKO_QTV_year" />
       </Flowchart.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -110,22 +161,56 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID1</x:Reference>
+        <x:Reference>__ReferenceID2</x:Reference>
       </Flowchart.StartNode>
       <FlowStep x:Name="__ReferenceID0">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">200,288.333333333333</av:Point>
+            <av:Point x:Key="ShapeLocation">220,288.333333333333</av:Point>
             <av:Size x:Key="ShapeSize">200,83.3333333333333</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Robot 1" DisplayName="Invoke TraitementdesPKOQTV workflow" sap:VirtualizedContainerService.HintSize="200,83.3333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Modules Réutilisables\TraitementdesPKOQTV.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Robot 1" DisplayName="Invoke TraitementdesPKOQTV workflow" sap:VirtualizedContainerService.HintSize="370.666666666667,144.666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Modules Réutilisables\TraitementdesPKOQTV.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_path_pdf">[in_path_pdf]</InArgument>
-            <OutArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</OutArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="In_Onglet_Dashboard_name">[In_Onglet_Dashboard_name]</InArgument>
-            <InArgument x:TypeArguments="x:Int32" x:Key="In_Dashboard_Column_Nbr_Ref">[In_Dashboard_Column_Nbr_Ref]</InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="In_Dashboard_Excelfile_Path">[In_Dashboard_Excelfile_Path]</InArgument>
+            <InArgument x:TypeArguments="x:Int32" x:Key="In_Dashboard_Column_Nbr_Ref">
+              <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="In_Dashboard_Column_Nbr_Ref" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="In_Dashboard_Excelfile_Path">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_ExcelPathDashboard" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="In_ExcelFileDashboard_Name">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_excel_dashboart_Name" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="In_PKOQTV_pdf_path">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_PKOQTV_pdf_path" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Login_EPP">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Login_EPP" />
+            </InArgument>
+            <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Password_EPP">
+              <mva:VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="in_Password_EPP" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Ip_adresse_Putty">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Ip_adresse_Putty" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Referentiel_path_DPE">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Referentiel_path_DPE" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Robot_Desktop_folder_path">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Robot_Desktop_folder_path" />
+            </InArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="out_PKO_QTV_month">
+              <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="PKO_QTV_month" />
+            </OutArgument>
+            <OutArgument x:TypeArguments="x:Int32" x:Key="out_PKO_QTV_year">
+              <mva:VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="PKO_QTV_year" />
+            </OutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="In_onglet_reference_DPE">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_onglet_reference_DPE" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_onglet_Dashboard_name">
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Onglet_Dashboard_name" />
+            </InArgument>
           </ui:InvokeWorkflowFile.Arguments>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -139,13 +224,24 @@
       <FlowStep>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">200,408.333333333333</av:Point>
+            <av:Point x:Key="ShapeLocation">220,428.333333333333</av:Point>
             <av:Size x:Key="ShapeSize">200,83.3333333333333</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" WorkflowFileName="{x:Null}" sap2010:Annotation.AnnotationText="Robot 2" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,83.3333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Robot 2" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,83.3333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Modules Réutilisables\Robot_2_preparation_courriel_PKO.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            <InArgument x:TypeArguments="x:String" x:Key="in_Dashboard_xlsx_PATH">[In_ExcelPathDashboard]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_onglet_dashboard">[in_Onglet_Dashboard_name]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_PKOQTV_pdf_path">[in_PKOQTV_pdf_path]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Robot_Desktop_folder_path">[Robot_Desktop_folder_path]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_month">[PKO_QTV_month]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_year">[PKO_QTV_year.ToString]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_curriel_save_Path">[in_curriel_save_Path]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Signature_path">[in_sigature_path]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_courriel_model_Path">[in_courriel_model_path_folder]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Robot_main_input">[in_Robot_main_input]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_save_pko_word_Path">[in_save_pko_word_Path]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="In_ExcelFileDashboard_Name">[in_excel_dashboart_Name]</InArgument>
           </ui:InvokeWorkflowFile.Arguments>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -158,11 +254,11 @@
       <FlowStep>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">190,708.333333333333</av:Point>
+            <av:Point x:Key="ShapeLocation">220,588.333333333333</av:Point>
             <av:Size x:Key="ShapeSize">200,83.3333333333333</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" WorkflowFileName="{x:Null}" sap2010:Annotation.AnnotationText="Robot 3" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,83.3333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Robot 3" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,83.3333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Modules Réutilisables\Robot_3_Envoie_courriel.xaml">
           <ui:InvokeWorkflowFile.Arguments>
             <scg:Dictionary x:TypeArguments="x:String, Argument" />
           </ui:InvokeWorkflowFile.Arguments>
@@ -174,16 +270,38 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:InvokeWorkflowFile>
       </FlowStep>
-      <FlowDecision x:Name="__ReferenceID1" Condition="[in_Flag_BeginR1]" DisplayName="Robot1" sap:VirtualizedContainerService.HintSize="70,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_2" True="{x:Reference __ReferenceID0}">
+      <FlowDecision x:Name="__ReferenceID2" Condition="[in_Flag_BeginR1]" DisplayName="Robot1" sap:VirtualizedContainerService.HintSize="70,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <av:Point x:Key="ShapeLocation">260.666666666667,126.666666666667</av:Point>
             <av:Size x:Key="ShapeSize">70,86.6666666666667</av:Size>
-            <av:PointCollection x:Key="TrueConnector">260.666666666667,170 240,170 240,258.333333333333 300,258.333333333333 300,288.333333333333</av:PointCollection>
+            <av:PointCollection x:Key="TrueConnector">260.666666666667,170 120,170 120,203.666666666667</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
+        <FlowDecision.True>
+          <FlowStep x:Name="__ReferenceID1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">20,203.666666666667</av:Point>
+                <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">120,256.333333333334 120,330 220,330</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetEnvironmentFolder DisplayName="Récuperer le chemin racine du repertoire/fichier Robot" FolderPath="[Robot_Desktop_folder_path]" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="Desktop">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:GetEnvironmentFolder>
+            <FlowStep.Next>
+              <x:Reference>__ReferenceID0</x:Reference>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowDecision.True>
       </FlowDecision>
+      <x:Reference>__ReferenceID1</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>

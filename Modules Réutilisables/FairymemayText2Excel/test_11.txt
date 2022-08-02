@@ -1,0 +1,486 @@
+  A  RECOUVRER  A  LA  DATE  DU  25 03 2021                                271,42*
+REF ETAT :  PKO  TOTAL      UP PAIGKMREF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   18     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I          23,84 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I      23,84 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0562 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 03/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I          23,84 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I      23,84 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0563 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 29/01/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           1,70 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       1,70 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0564 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 03/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           1,70 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       1,70 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0565 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 29/01/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   19     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           1,67 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,11I       1,56 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0566 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 03/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           1,67 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,11I       1,56 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0567 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 29/01/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I          23,84 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I      23,84 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0295 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 24/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I          23,84 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I      23,84 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0296 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 05/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   20     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           1,70 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       1,70 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0297 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 24/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           1,70 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,00I       1,70 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0298 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 05/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           1,67 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,11I       1,56 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0299 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 24/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           1,67 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,11I       1,56 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0300 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 05/02/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   21     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I           6,94 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,46I       6,48 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1064 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 12/10/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I          11,92 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,79I      11,13 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1065 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/03/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I          11,92 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,79I      11,13 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1066 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 05/03/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           0,85 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,80 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1067 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 12/10/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   22     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           0,85 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,80 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1068 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/03/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           0,85 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,80 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1069 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 05/03/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,83 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,78 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1070 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 12/10/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,83 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,78 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1071 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/03/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   23     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,83 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,78 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1072 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 05/03/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* HEURES ANNEES ENSEIGNT   I           6,94 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,46I       6,48 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* FEVRIER   2021 2021B0487 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/11/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 B8              I                I           I           I           I           I             I           I            *
+* MAJO.1ERE HSA ENSEIGNT   I           0,85 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,80 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* FEVRIER   2021 2021B0488 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/11/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 J6              I                I           I           I           I           I             I           I            *
+* IND. COMPENSATRICE CSG   I           0,83 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       0,05I       0,78 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* FEVRIER   2021 2021B0489 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/11/2020 *SNFI                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   24     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I         188,87 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I      12,65I     176,22 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0568 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 03/02/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I         188,87 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I      12,65I     176,22 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* NOVEMBRE  2020 2020K0569 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 29/01/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I         188,87 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I      12,65I     176,22 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0301 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 24/02/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I         188,87 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I      12,65I     176,22 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* DECEMBRE  2020 2020L0302 I                I           I           I           I           I             I           I            *
+* 02J DEBUT 05/02/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *REF ETAT : PKO         UP PAIGKM                                                                    DATE : 23 03 2021
+************************************************************************************************************************************
+*                         *                                                                                                        *
+*                         *                                                                                          PAGE   25     *
+*  DDFIP                  *                          ETAT DETAILLE DES INDUS CONSTATES                                             *
+*  DES                    *                                                                                                        *
+*  YVELINES               *                                EN  MARS      2021                                                      *
+*                         *                                                                                                        *
+*                         *                                                                                                        *
+************************************************************************************************************************************
+*  GESTIONNAIRE : 220006      GESTION : 295 078     POSTE : 0920137   LGT GUY DE MAUPASSANT   COLOMBES                             *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  MINISTERE   : 206      I       N° INSEE        I  CODE RETENUE       N° ENREGISTREMENT  I  COMPTABLE ASSIGNATAIRE  IREMUNERATION*
+*                         I                       I                                        I                          I            *
+*  ORDONNATEUR : 053 078  I  1800566136238 01 00  I      5110               2021C0542      I        0780              I    01      *
+*----------------------------------------------------------------------------------------------------------------------------------*
+*  NOM ET ADRESSE DU DEBITEUR                                   I  REFERENCES DU TITRE  I   COMPTABLE ASSIGNATAIRE :         :     *
+*                                                               I------------------------                                          *
+*  PIJOAN                   DAVID                               I  NUMERO :             DATE :             MONTANT :               *
+*                                                               I                                                                  *
+*                                                               I  SPECIFICATION :               CODE SERVICE :                    *
+*        28  RUE GRAMME                                         I------------------------------------------------------------------*
+*                                                               I                                                                  *
+*      92270 BOIS COLOMBES                                      I  MONTANT DE LA PROPOSITION DE TITRE  :         1207,26           *
+*      BOIS COLOMBES                                            I                                                                  *
+************************************************************************************************************************************
+*                                                  ELEMENTS DE LA PROPOSITION D EMISSION DE TITRE                                  *
+*----------------------------------------------------------------------------------------------------------------------------------*
+* IMPUTATION BUDGETAIRE    I MONTANT        I RECOUVREMENTS EFFECTUE SUR COTISATIONS        I RECOUVRTS   IMONTANTS   I RESTES  A  *
+*                          I INITIAL DE     I-----------------------------------------------I   SUR       IDE PAS     I RECOUVRER  *
+* LIBELLE ELEMENT DE       I LA DETTE       I   SS      I    RC     I CSG, RDS, I  CSGded   I SALAIRE     IREGULARISE I            *
+* REMUNERATION             I                I           I           I Mutuelle  I           I             I           I            *
+* ---------------------------------------------------------------------------------------------------------------------------------*
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I          94,43 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       6,32I      88,11 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1073 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 12/10/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I          94,43 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       6,32I      88,11 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1074 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/03/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I          94,43 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       6,32I      88,11 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* JANVIER   2021 2021A1075 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 05/03/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+* 01 41 15 YC              I                I           I           I           I           I             I           I            *
+* PRECOMPTE SERV. NON FAIT I          94,43 I      0,00 I      0,00 I      0,00 I      0,00 I        0,00 I       6,32I      88,11 *
+* ISSU PAYE DE             I                I           I           I           I           I             I           I            *
+* FEVRIER   2021 2021B0490 I                I           I           I           I           I             I           I            *
+* 01J DEBUT 10/11/2020     I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+*                          I                I           I           I           I           I             I           I            *
+************************************************************************************************************************************
+*                          MONTANT  TOTAL  

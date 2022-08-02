@@ -1,0 +1,22 @@
+Fichier Excel:
+
+colonne 1 => code gestion (par ex 125)=> DPE.
+	     DEP 
+ 	     PGE paie
+	     nom gestionaire
+	     
+
+
+Recouvert sur salaire c'est la somme de la colonne recouvert sur salaire.
+
+
+quand est ce qu'on voie une livraison
+
+Objectif: RUDA => depot de dossier
+
+spina & christel
+
+ON A UN CHALLENGE;
+LE PLAN PROJET REPOND A CERTAIN DE SES CHALLENGE
+
+

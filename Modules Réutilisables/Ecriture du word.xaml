@@ -1,0 +1,280 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Ecriture_du_word" this:Ecriture_du_word.in_initial_brut_amount="4545" this:Ecriture_du_word.in_Motif="x" this:Ecriture_du_word.in_DPE="DPE6" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_initial_brut_amount" Type="InArgument(x:String)" />
+    <x:Property Name="in_Motif" Type="InArgument(x:String)" />
+    <x:Property Name="in_Final_notified_amount" Type="InArgument(x:String)" />
+    <x:Property Name="in_DPE" Type="InArgument(x:String)" />
+    <x:Property Name="in_Signature_Path" Type="InArgument(x:String)" />
+    <x:Property Name="in_curriel_save_Path" Type="InArgument(x:String)" />
+    <x:Property Name="in_first_name" Type="InArgument(x:String)" />
+    <x:Property Name="in_last_name" Type="InArgument(x:String)" />
+    <x:Property Name="in_motif_deces" Type="InArgument(x:String)" />
+    <x:Property Name="in_begin_date" Type="InArgument(x:String)" />
+    <x:Property Name="in_end_date" Type="InArgument(x:String)" />
+    <x:Property Name="in_model_Model_Path" Type="InArgument(x:String)" />
+    <x:Property Name="in_precompte_amount" Type="InArgument(x:String)" />
+    <x:Property Name="in_INSEE" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Ecriture_du_word.in_Signature_Path>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Ecriture_du_word.in_Signature_Path>
+  <this:Ecriture_du_word.in_curriel_save_Path>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Ecriture_du_word.in_curriel_save_Path>
+  <this:Ecriture_du_word.in_precompte_amount>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Ecriture_du_word.in_precompte_amount>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1925.33333333333,2670.66666666667</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Ecriture_du_word_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="58">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="68">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="courrier PKO avec indu PRELEVE partiellement sur BS - précompte" sap:VirtualizedContainerService.HintSize="1935.33333333333,2606" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1893.33333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;in_curriel_save_Path =&quot;+ in_curriel_save_Path.ToString]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1893.33333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;in_model_pj_PATH =&quot;+in_model_Model_Path]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1893.33333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;path signature in ecriture word = &quot;+in_Signature_Path+&quot;\&quot;+in_DPE+&quot;.jpeg&quot;]" />
+    <If Condition="[in_motif_deces= &quot;x&quot;]" DisplayName="Motif = x ?" sap:VirtualizedContainerService.HintSize="1893.33333333333,2206" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="590.666666666667,2042" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <p:WordApplicationScope AutoSave="False" DisplayName="Courrier PKO suite à décès pour les ayants droits ou notaire" FilePath="[in_model_Model_Path+&quot;\Courrier PKO suite à décès pour les ayants droits ou notaire.docx&quot;]" sap:VirtualizedContainerService.HintSize="548.666666666667,1950" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2">
+            <p:WordApplicationScope.Body>
+              <ActivityAction x:TypeArguments="ui:WordDocument">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="476,1841.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie civilité" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_8" Replace="Mm/M ," ReplaceAll="True" Search="M_____," />
+                  <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie Nom, prénon ayants droits" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_7" Replace="[&quot;Ou les ayants droits de Mme/M &quot;+in_first_name+&quot;  &quot;+in_last_name]" ReplaceAll="True" Search="Ou les ayants droits de Mme/M………." />
+                  <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie montant initial brut" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" Replace="[&quot;montant initial brut de &quot;+ in_initial_brut_amount+&quot; &quot;]" ReplaceAll="True" Search="montant initial brut de _____">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </p:WordReplaceText>
+                  <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie nom prenom" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" Replace="[&quot;Mr/Mme &quot;+in_first_name+&quot; &quot;+in_last_name]" ReplaceAll="True" Search="Civilité Prénom NOM" />
+                  <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie de la période de debut " sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" Replace="[&quot;du &quot;+in_begin_date]" ReplaceAll="True" Search="du _____" />
+                  <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie de la période de fin" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_6" Replace="[&quot;au &quot;+in_end_date]" ReplaceAll="True" Search="au _____" />
+                  <p:WordReplacePicture DisplayName="Ajouter signature" sap:VirtualizedContainerService.HintSize="434,140.666666666667" sap2010:WorkflowViewState.IdRef="WordReplacePicture_4" PictureAltText="Signature" PicturePath="[in_Signature_Path+&quot;\&quot;+in_DPE+&quot;.jpeg&quot;]" />
+                  <p:WordSaveAs DisplayName="Save Document As document docx" FilePath="[in_curriel_save_PATH+&quot;\&quot;+in_INSEE+&quot;_Courrier PKO suite à décès pour les ayants droits ou notaire.docx&quot;]" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="WordSaveAs_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </p:WordSaveAs>
+                  <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[in_curriel_save_PATH+&quot;\&quot;+in_INSEE+&quot;_Courrier PKO suite à décès pour les ayants droits ou notaire.pdf&quot;]" sap:VirtualizedContainerService.HintSize="434,112.666666666667" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+                </Sequence>
+              </ActivityAction>
+            </p:WordApplicationScope.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </p:WordApplicationScope>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="1256.66666666667,1914" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If Condition="[in_precompte_amount.ToString = &quot;0&quot;]" DisplayName="courrier PKO sans précompte sur BS" sap:VirtualizedContainerService.HintSize="1214.66666666667,1822" sap2010:WorkflowViewState.IdRef="If_2">
+            <If.Then>
+              <Sequence sap:VirtualizedContainerService.HintSize="552,1450.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <p:WordApplicationScope sap2010:Annotation.AnnotationText="a remplacer" AutoSave="False" CreateNewFile="False" DisplayName="courrier PKO sans précompte sur BS.doc" FilePath="[in_model_Model_Path+&quot;\courrier PKO sans précompte sur BS.doc&quot;]" sap:VirtualizedContainerService.HintSize="510,1358.66666666667" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3">
+                  <p:WordApplicationScope.Body>
+                    <ActivityAction x:TypeArguments="ui:WordDocument">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="476,1219.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie nom/prenon" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_9" Replace="[&quot;Mme /M. &quot;+in_first_name+&quot;  &quot;+in_last_name]" ReplaceAll="True" Search="Mme /M." />
+                        <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie du motif" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_10" Replace="[&quot;.....&quot;+in_Motif+&quot;.....&quot;]" ReplaceAll="True" Search="………………………………………………" />
+                        <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie Montant initial brut" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[&quot;initial brut* de &quot;+ in_initial_brut_amount+&quot; &quot;]" ReplaceAll="True" Search="initial brut* de ………">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </p:WordReplaceText>
+                        <p:WordReplacePicture DisplayName="Replace Picture" sap:VirtualizedContainerService.HintSize="434,140.666666666667" sap2010:WorkflowViewState.IdRef="WordReplacePicture_2" PictureAltText="Signature" PicturePath="[in_Signature_Path+&quot;\&quot;+in_DPE+&quot;.jpeg&quot;]" />
+                        <p:WordSaveAs DisplayName="Save Document As" FilePath="[in_curriel_save_PATH+&quot;\&quot;+ in_INSEE+&quot;_courrier PKO sans précompte sur BS.doc&quot;]" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="WordSaveAs_2" />
+                        <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[in_curriel_save_PATH+&quot;\&quot;+ in_INSEE+&quot;_courrier PKO sans précompte sur BS.pdf&quot;]" sap:VirtualizedContainerService.HintSize="434,112.666666666667" sap2010:WorkflowViewState.IdRef="WordExportToPdf_2" />
+                      </Sequence>
+                    </ActivityAction>
+                  </p:WordApplicationScope.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </p:WordApplicationScope>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="616.666666666667,1658" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <p:WordApplicationScope DisplayName="courrier PKO avec indu PRELEVE partiellement sur BS - précompte" FilePath="[in_model_Model_Path+&quot;\courrier PKO avec indu PRELEVE partiellement sur BS - précompte.doc&quot;]" sap:VirtualizedContainerService.HintSize="574.666666666667,1566" sap2010:WorkflowViewState.IdRef="WordApplicationScope_4">
+                  <p:WordApplicationScope.Body>
+                    <ActivityAction x:TypeArguments="ui:WordDocument">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="476,1457.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie nom/prenon" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_11" Replace="[&quot;Mme /M. &quot;+in_first_name+&quot;  &quot;+in_last_name]" ReplaceAll="True" Search="Mme /M." />
+                        <p:WordReplaceText Found="{x:Null}" sap2010:Annotation.AnnotationText="a remplacer" DisplayName="courrier PKO avec indu PRELEVE partiellement sur BS - précompte" sap:VirtualizedContainerService.HintSize="434,198" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" Replace="[&quot;initial brut* de &quot;+ in_initial_brut_amount+&quot; &quot;]" ReplaceAll="True" Search="initial brut* de ………">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </p:WordReplaceText>
+                        <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie du motif" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_12" Replace="[&quot;.....&quot;+in_Motif+&quot;.....&quot;]" ReplaceAll="True" Search="………………………………………………" />
+                        <p:WordReplaceText Found="{x:Null}" DisplayName="Saisie du montant du précompte" sap:VirtualizedContainerService.HintSize="434,167.333333333333" sap2010:WorkflowViewState.IdRef="WordReplaceText_13" Replace="[&quot;un montant de &quot;+in_precompte_amount]" ReplaceAll="True" Search="un montant de ……………… " />
+                        <p:WordReplacePicture DisplayName="Replace Picture" sap:VirtualizedContainerService.HintSize="434,140.666666666667" sap2010:WorkflowViewState.IdRef="WordReplacePicture_3" PictureAltText="Signature" PicturePath="[in_Signature_Path+&quot;\&quot;+in_DPE+&quot;.jpeg&quot;]" />
+                        <p:WordSaveAs DisplayName="Save Document As" FilePath="[in_curriel_save_PATH+&quot;\&quot;+ in_INSEE+&quot;_courrier PKO avec indu PRELEVE partiellement sur BS - précompte.doc&quot;]" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="WordSaveAs_3" />
+                        <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[in_curriel_save_PATH+&quot;\&quot;+ in_INSEE+&quot;_courrier PKO sans précompte sur BS.pdf&quot;]" sap:VirtualizedContainerService.HintSize="434,112.666666666667" sap2010:WorkflowViewState.IdRef="WordExportToPdf_3" />
+                      </Sequence>
+                    </ActivityAction>
+                  </p:WordApplicationScope.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </p:WordApplicationScope>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

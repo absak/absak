@@ -4,12 +4,17 @@
   "main": "Main.xaml",
   "dependencies": {
     "BalaReva.Pdf.Activities": "[2019.3.1]",
-    "UiPath.Excel.Activities": "[2.11.4]",
-    "UiPath.PDF.Activities": "[3.4.1]",
-    "UiPath.System.Activities": "[21.10.4]",
-    "UiPath.Testing.Activities": "[1.4.6]",
-    "UiPath.UIAutomation.Activities": "[21.10.5]",
-    "UiPath.Word.Activities": "[1.10.1]"
+    "System.Runtime.InteropServices.WindowsRuntime": "[4.3.0]",
+    "UiPath.AdobePdfServices.IntegrationService.Activities": "[4.0.6]",
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.1]",
+    "UiPath.PDF.Activities": "[3.7.2-preview]",
+    "UiPath.System.Activities": "[22.4.1]",
+    "UiPath.Testing.Activities": "[22.4.3]",
+    "UiPath.UIAutomation.Activities": "[22.4.6]",
+    "UiPath.WebAPI.Activities": "[1.11.1]",
+    "UiPath.Word.Activities": "[1.10.1]",
+    "Xceed.Pdf": "[2.3.22263.20500]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -17,6 +22,7 @@
   "studioVersion": "21.10.5.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
+    "exceptionHandlerWorkflow": "Modules Réutilisables\\Gestionnaireglobal.xaml",
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
     "isPausable": true,

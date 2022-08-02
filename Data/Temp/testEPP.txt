@@ -1,0 +1,24 @@
+llqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk
+xx Bureau: P*****                     EPP                    DATE: 30/06/2022  x
+xx                   Affichage liste et choix de s▒lection                     x
+xxqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq x
+xx   Nom d'usage         |Pr▒nom         |Grade          |Discipline           x
+xxqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq x
+xx   BOULAUD             |LEA            |7811 AC2C1     |0012X EDU.ORI        x
+xx                                                                             x
+xx                                                                             x
+xx                                                                             x
+xx                                                                             x
+xx                                                                             x
+xx                                                                             x
+xx                                                                             x
+xxqqqqq --- qqqqqqqqqqqqqqqqqqqq 1/1      qqqqqqqqqqqqqqqqqqqqqqqqq --- qqqqqq x
+xx N▒ Education Nationale   N▒ dossier   Nom patronymique    Date de naissance x
+xx    25E1951211GHO                       BOULAUD                   11/11/1995 x
+xx Etabl.:                                                                     x
+xx Bureaux de gestion :    1- PE02G      2- PE0R14     3- PE02GB     4- PE0R14 x
+xx <ESC> Sortir  <F3/F4> Pagination  <F9> Ecran de synth▒se  <F10> Validation  x
+xx                                                                             x
+xx                                                                             x
+mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj
+                                                                                

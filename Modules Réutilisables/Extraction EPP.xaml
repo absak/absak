@@ -1,0 +1,1382 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Extraction_EPP" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_Login" Type="InArgument(x:String)" />
+    <x:Property Name="In_Password" Type="InArgument(ss:SecureString)" />
+    <x:Property Name="In_IP_Adress" Type="InArgument(x:String)" />
+    <x:Property Name="Out_Birth_country" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Birth_Department" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Birth_commune" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_PGE" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_email_Pro" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_adresse" Type="OutArgument(x:String)" />
+    <x:Property Name="In_dashboard_dt" Type="InOutArgument(sd:DataTable)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>846,11151.3333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Extraction_EPP_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Extraction_EPP" sap:VirtualizedContainerService.HintSize="856,11086.6666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="First_EPP_extraction" />
+      <Variable x:TypeArguments="x:String" Name="Second_EPP_Extr_for_birthadr" />
+      <Variable x:TypeArguments="s:String[]" Name="Splitted_EPP_screen4" />
+      <Variable x:TypeArguments="x:String" Name="EPP_Adresse_screen" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="EPP_Extraction_for_mail" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke LoginEPP workflow" sap:VirtualizedContainerService.HintSize="814,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Modules Réutilisables\LoginEPP.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="In_IP_Adress">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_IP_Adress" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="In_Login">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="In_Login" />
+        </InArgument>
+        <InArgument x:TypeArguments="ss:SecureString" x:Key="In_Password">
+          <mva:VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="In_Password" />
+        </InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Sequence DisplayName="initialialisation" sap:VirtualizedContainerService.HintSize="814,84.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_36">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_dashboard_dt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="814,10424" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="780,10305.3333333333" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Extraction Discipline date de naissance, PGE" sap:VirtualizedContainerService.HintSize="738,10213.3333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="s:String[]" Name="Splitted_EPP_screen1" />
+                <Variable x:TypeArguments="s:String[]" Name="Splitted_EPP_screen2" />
+                <Variable x:TypeArguments="s:String[]" Name="Splitted_EPP_screen3" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="2000" DisplayName="Saisie ACM" sap:VirtualizedContainerService.HintSize="696,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="ACM[k(enter)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="57faa20b-8c65-4c89-9e8f-09f6da6277a1" InformativeScreenshot="54d5d8f3f31b682587a5b42e564ab3b0" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Saisie Nom" sap:VirtualizedContainerService.HintSize="696,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[CurrentRow(8).ToString+ &quot;[k(enter)]&quot;]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b46ea9e9-9e1a-4999-b290-fe200bbc1ac7" InformativeScreenshot="8b48ac8dd8f50b88cd2f080752fa508e" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Saisie Prenon" sap:VirtualizedContainerService.HintSize="696,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="[CurrentRow(9).ToString]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5f36fd55-bf7d-4232-bbe5-a19a3034d202" InformativeScreenshot="a3f43ae04f25a4c4d471a28f493b0a1b" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Send Hotkey 'client 10.242.16.177'" sap:VirtualizedContainerService.HintSize="696,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f10" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2dcb6b33-6cc5-4c7c-a58d-7b409a8bab85" InformativeScreenshot="6b66a16bd4fc33c36ac3aab7a37eebcd" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+              </ui:SendHotkey>
+              <Sequence DisplayName="Extraction de données d'écran" sap:VirtualizedContainerService.HintSize="696,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '102421617 Putty'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="893463ea8a3cae3dd0083da17f046ff9" Selector="[String.Format(&quot;&lt;wnd app='putty.exe' cls='PuTTY' title='{0} - PuTTY' /&gt;&quot;, In_IP_Adress)]">
+                  <ui:WindowScope.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetVisibleText WordsInfo="{x:Null}" DisplayName="Get Visible Text 'client 10.242.16.177'" FormattedText="False" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_2">
+                          <ui:GetVisibleText.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cf2702cc-8841-4992-b298-7037f769fe21" InformativeScreenshot="beec0cfd802fa722654d301ce92ca7a7" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:GetVisibleText.Target>
+                          <ui:GetVisibleText.Text>
+                            <OutArgument x:TypeArguments="x:String">[First_EPP_extraction]</OutArgument>
+                          </ui:GetVisibleText.Text>
+                        </ui:GetVisibleText>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:WindowScope.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:WindowScope>
+              </Sequence>
+              <If sap2010:Annotation.AnnotationText="" Condition="[First_EPP_extraction.contains(&quot;La liste est vide.&quot;)]" DisplayName="Il n'y a pas de données pour cet utilisateur " sap:VirtualizedContainerService.HintSize="696,83.3333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="472.666666666667,1023.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MultipleAssign DisplayName="Saisir des valeur d'éxéption " sap:VirtualizedContainerService.HintSize="430.666666666667,283.333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="32">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(15)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["non trouvé"]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(16)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["non trouvé"]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(17)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["non trouvé"]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(18)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["non trouvé"]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(19)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["non trouvé"]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(14)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["Non éffectué"]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'client 10.242.16.177'" sap:VirtualizedContainerService.HintSize="430.666666666667,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_9" Key="esc" KeyModifiers="None" SpecialKey="True">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f0e28c5-8c7e-4d52-b058-e3c96bf59a6e" InformativeScreenshot="6244a38279edd4b2daac3008260ffcd6" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'client 10.242.16.177'" sap:VirtualizedContainerService.HintSize="430.666666666667,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="esc" KeyModifiers="None" SpecialKey="True">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f0e28c5-8c7e-4d52-b058-e3c96bf59a6e" InformativeScreenshot="6244a38279edd4b2daac3008260ffcd6" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'client 10.242.16.177'" sap:VirtualizedContainerService.HintSize="430.666666666667,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_11" Key="esc" KeyModifiers="None" SpecialKey="True">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f0e28c5-8c7e-4d52-b058-e3c96bf59a6e" InformativeScreenshot="6244a38279edd4b2daac3008260ffcd6" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <ui:Continue sap:VirtualizedContainerService.HintSize="430.666666666667,22" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\asaket\OneDrive - Capgemini\Desktop\Robot_IndusSurRemuneration\Data\Temp\testEPP.txt" sap:VirtualizedContainerService.HintSize="696,135.333333333333" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[First_EPP_extraction]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:WriteTextFile>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="696,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="476,331.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Splitted_EPP_screen1]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Splitted =&quot;+item]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <Sequence DisplayName="Récupération Dicipline, date de naissance, PGE " sap:VirtualizedContainerService.HintSize="696,1832.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Split EPP 1" sap:VirtualizedContainerService.HintSize="654,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[Splitted_EPP_screen1]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]" xml:space="preserve">[split(First_EPP_extraction, Environment.NewLine  )]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign DisplayName="Split EPP 2" sap:VirtualizedContainerService.HintSize="654,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[Splitted_EPP_screen2]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[Split(Splitted_EPP_screen1(6), "|")]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="654,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Activités ignorées" sap:VirtualizedContainerService.HintSize="476,331.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Splitted_EPP_screen2]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:String">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_21" Text="[&quot;for dicipline =&quot;+item]" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:ForEach>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;Decipline= &quot;+Splitted_EPP_screen2(3).Substring(5,11)]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(Splitted_EPP_screen2(3).Substring(5,11) )]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie de decipline" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(20)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[Splitted_EPP_screen2(3).Substring(5,14)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie de decipline" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_23">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(20)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <Assign sap:VirtualizedContainerService.HintSize="654,62" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[Splitted_EPP_screen3]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[First_EPP_extraction.split({"Date de naissance x","xx Etabl."}, StringSplitOptions.None)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[&quot;Birthday :=&quot;+Splitted_EPP_screen3(1).Substring(63).Replace(&quot; x&quot;,&quot;&quot;).TrimStart]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(Splitted_EPP_screen3(1).Substring(63).Replace(&quot; x&quot;,&quot;&quot;).TrimStart)]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="saisie dte de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_22">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(16)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[Splitted_EPP_screen3(1).Substring(63).Replace(" x","").TrimStart]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="saisie dte de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_24">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(16)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[&quot;PGE =&quot;+First_EPP_extraction.Substring(First_EPP_extraction.IndexOf(&quot;xx Bureaux de gestion :&quot;)+&quot;xx Bureaux de gestion :&quot;.Length).Substring(First_EPP_extraction.Substring(First_EPP_extraction.IndexOf(&quot;xx Bureaux de gestion :&quot;)+&quot;xx Bureaux de gestion :&quot;.Length).IndexOf(&quot; 3-&quot;)+4,7)]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(First_EPP_extraction.Substring(First_EPP_extraction.IndexOf(&quot;xx Bureaux de gestion :&quot;)+&quot;xx Bureaux de gestion :&quot;.Length).Substring(First_EPP_extraction.Substring(First_EPP_extraction.IndexOf(&quot;xx Bureaux de gestion :&quot;)+&quot;xx Bureaux de gestion :&quot;.Length).IndexOf(&quot; 3-&quot;)+4,7))]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie PGE" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_9">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[First_EPP_extraction.Substring(First_EPP_extraction.IndexOf("xx Bureaux de gestion :")+"xx Bureaux de gestion :".Length).Substring(First_EPP_extraction.Substring(First_EPP_extraction.IndexOf("xx Bureaux de gestion :")+"xx Bureaux de gestion :".Length).IndexOf(" 3-")+4,7)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie PGE" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_25">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DelayMS="1000" DisplayName="passer a l'ecran suivant pour relever l'adresse" sap:VirtualizedContainerService.HintSize="696,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="f10" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86ed8c8c-16c3-4a0f-9502-002e851ed64d" InformativeScreenshot="dcac058e43a429baad1fc59c89e4120e" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:SendHotkey>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Saisie AGDPS" sap:VirtualizedContainerService.HintSize="696,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="AGDPS[k(enter)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2db7ed88-e9e0-4a7a-b323-34672924d718" InformativeScreenshot="95c0c82d362400e18097eb0b857cc93d" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:TypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Saisie AGDDP" sap:VirtualizedContainerService.HintSize="696,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="AGDDP[k(enter)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d06137d1-9194-41ba-a952-6c0cb4e780f8" InformativeScreenshot="fdc06a799790ba991b9354d005243241" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:TypeInto>
+              <Sequence DisplayName="Récupération pays, commune, departement de naissance" sap:VirtualizedContainerService.HintSize="696,1711.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Extraction de données d'écran" sap:VirtualizedContainerService.HintSize="654,144.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '102421617 Putty'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="9376c8804e499c518b0617ae6400e74f" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;">
+                    <ui:WindowScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:GetVisibleText WordsInfo="{x:Null}" DisplayName="Get Visible Text 'client 10.242.16.177'" FormattedText="False" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_3">
+                            <ui:GetVisibleText.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="28c57ba4-354f-4a4e-83c5-bdcb892e7c96" InformativeScreenshot="8c47166975aa23d096abcad64190365d" Selector="&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:GetVisibleText.Target>
+                            <ui:GetVisibleText.Text>
+                              <OutArgument x:TypeArguments="x:String">[Second_EPP_Extr_for_birthadr]</OutArgument>
+                            </ui:GetVisibleText.Text>
+                          </ui:GetVisibleText>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:WindowScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:WindowScope>
+                </Sequence>
+                <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\asaket\OneDrive - Capgemini\Desktop\Robot_IndusSurRemuneration\Data\Temp\adressextract.txt" sap:VirtualizedContainerService.HintSize="654,52.6666666666667" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[Second_EPP_Extr_for_birthadr]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:WriteTextFile>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[&quot;Pays de naissance =&quot;+System.Text.RegularExpressions.Regex.Replace(Second_EPP_Extr_for_birthadr.Substring(Second_EPP_Extr_for_birthadr.IndexOf(&quot;Pays nai:&quot;)+9, 35),&quot;[\d-]&quot;,String.empty)]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Replace(Second_EPP_Extr_for_birthadr.Substring(Second_EPP_Extr_for_birthadr.IndexOf(&quot;Pays nai:&quot;)+9, 35),&quot;[\d-]&quot;,String.empty))]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_5">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie Pays de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(19)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(Second_EPP_Extr_for_birthadr.Substring(Second_EPP_Extr_for_birthadr.IndexOf("Pays nai:")+9, 35),"[\d-]",String.empty)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie Pays de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_26">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(19)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[&quot;Ville de naissance =&quot;+System.Text.RegularExpressions.Regex.Replace(System.Text.RegularExpressions.Regex.Match( Second_EPP_Extr_for_birthadr,&quot;(?&lt;=nais:).*(?=Commune:)&quot;).ToString,&quot;[\d-]&quot;,String.empty)]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Replace(System.Text.RegularExpressions.Regex.Match( Second_EPP_Extr_for_birthadr,&quot;(?&lt;=nais:).*(?=Commune:)&quot;).ToString,&quot;[\d-]&quot;,String.empty))]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_6">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="saisie ville de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_15">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(17)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(System.Text.RegularExpressions.Regex.Match( Second_EPP_Extr_for_birthadr,"(?&lt;=nais:).*(?=Commune:)").ToString,"[\d-]",String.empty)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="saisie ville de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_27">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(17)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[&quot; Commune de naissance= &quot;+System.Text.RegularExpressions.Regex.Match( Second_EPP_Extr_for_birthadr,&quot;(?&lt;=Commune).*(?=x)&quot;).ToString]" />
+                <If Condition="[Not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Match( Second_EPP_Extr_for_birthadr,&quot;(?&lt;=Commune).*(?=x)&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_7">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="saisie de la commune de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_8">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(18)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(System.Text.RegularExpressions.Regex.Match( Second_EPP_Extr_for_birthadr,"(?&lt;=Commune).*(?=x)").ToString ,"\d", " ").Replace(":","")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="saisie de la commune de naissance" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_28">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(18)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DelayMS="1000" DisplayName="Cliquer sur entrer" sap:VirtualizedContainerService.HintSize="696,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb1cafb4-1f98-47ae-8d22-bf3aba12c7cb" InformativeScreenshot="3c1d695e070b2ad4843b681215368d61" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:SendHotkey>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Sasie de AGDAT " sap:VirtualizedContainerService.HintSize="696,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="AGDAT[k(enter)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2bcf6c3b-742d-4f97-a8c9-f3896858284c" InformativeScreenshot="a5f882010f0f839721b5d1c81db704d1" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:TypeInto>
+              <Sequence DisplayName="Récupération adresse de l'agent" sap:VirtualizedContainerService.HintSize="696,2470" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="Out_commune" />
+                  <Variable x:TypeArguments="x:String" Name="Out_postal_code" />
+                  <Variable x:TypeArguments="x:String" Name="Out_resi_country" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '102421617 Putty'" sap:VirtualizedContainerService.HintSize="654,52.6666666666667" sap2010:WorkflowViewState.IdRef="WindowScope_5" InformativeScreenshot="89fa575b67a06d25d3425ac123ba4224" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;">
+                  <ui:WindowScope.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetVisibleText WordsInfo="{x:Null}" DisplayName="Get Visible Text 'client 10.242.16.177'" FormattedText="False" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_4">
+                          <ui:GetVisibleText.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d3c381c-80f2-42ae-a011-98eb38bd4ee9" InformativeScreenshot="f13a38d53e5df1e0c91705da93779148" Selector="&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:GetVisibleText.Target>
+                          <ui:GetVisibleText.Text>
+                            <OutArgument x:TypeArguments="x:String">[EPP_Adresse_screen]</OutArgument>
+                          </ui:GetVisibleText.Text>
+                        </ui:GetVisibleText>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:WindowScope.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:WindowScope>
+                <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\asaket\OneDrive - Capgemini\Desktop\Robot_IndusSurRemuneration\Data\Temp\EPP_adress.txt" sap:VirtualizedContainerService.HintSize="654,135.333333333333" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[EPP_Adresse_screen]" />
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[&quot;Numero =&quot;+System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=Num▒ro).*(?=Bis,Ter)&quot;).ToString]" />
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[&quot;Nature =&quot;+System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=Nature  :).*(?=Nom     :)&quot;).ToString]" />
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="[&quot;Nom =&quot;+System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=Nom     :).*(?= x)&quot;).ToString]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=Nom     :).*(?= x)&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_8">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie de l'adresse" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_11">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_adresse]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,"(?&lt;=Num▒ro).*(?=Bis,Ter)").ToString +System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,"(?&lt;=Nature  :).*(?=Nom     :)").ToString+"Nom ="+System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,"(?&lt;=Nom     :).*(?= x)").ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie de l'adresse" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_29">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_adresse]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Non trouvé</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[&quot;Code postale  agent =&quot;+System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=xCode Postal              :).*(?= x)&quot;).ToString.TrimEnd]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=xCode Postal              :).*(?= x)&quot;).ToString.TrimEnd)]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_9">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie code postale de résidence" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_13">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_postal_code]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,"(?&lt;=xCode Postal              :).*(?= x)").ToString.TrimEnd]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie code postale de résidence" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_30">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_postal_code]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Non trouvé</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="[&quot;Commune resi  agent=&quot;+System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=d'acheminement  :).*(?= x)&quot;).ToString.TrimEnd]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=d'acheminement  :).*(?= x)&quot;).ToString.TrimEnd)]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_10">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie commune de résidence" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_12">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_commune]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,"(?&lt;=d'acheminement  :).*(?= x)").ToString.TrimEnd]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie commune de résidence" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_31">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_commune]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Non trouvé</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="[&quot;Pays de resid =&quot;+System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=xPays de l'adresse        :).*(?= x)&quot;).ToString.TrimEnd]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,&quot;(?&lt;=xPays de l'adresse        :).*(?= x)&quot;).ToString.TrimEnd)]" sap:VirtualizedContainerService.HintSize="654,420" sap2010:WorkflowViewState.IdRef="If_11">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,256" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_34">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(13)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object" xml:space="preserve">[System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,"(?&lt;=xPays de l'adresse        :).*(?= x)").ToString.TrimEnd]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign DisplayName="saisie pays résidence" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_14">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_resi_country]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.Text.RegularExpressions.Regex.Match( EPP_Adresse_screen,"(?&lt;=xPays de l'adresse        :).*(?= x)").ToString.TrimEnd]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="saisie pays résidence" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_32">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Out_resi_country]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Non trouvé</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DelayMS="1000" DisplayName="Cliquer sur entrer" sap:VirtualizedContainerService.HintSize="696,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb1cafb4-1f98-47ae-8d22-bf3aba12c7cb" InformativeScreenshot="3c1d695e070b2ad4843b681215368d61" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:SendHotkey>
+              <Sequence DisplayName="Récupération mail agent" sap:VirtualizedContainerService.HintSize="696,1557.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Saisie  ACM" sap:VirtualizedContainerService.HintSize="654,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="ACM[k(enter)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="98305052-60df-4bbe-8fc9-37b331f88f99" InformativeScreenshot="77685e8325a9c4502fb56cf8e42253e2" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:TypeInto>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Saisie Nom" sap:VirtualizedContainerService.HintSize="654,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_11" Text="[CurrentRow(8).ToString+ &quot;[k(enter)]&quot;]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b46ea9e9-9e1a-4999-b290-fe200bbc1ac7" InformativeScreenshot="8b48ac8dd8f50b88cd2f080752fa508e" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:TypeInto>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Saisie Prenon" sap:VirtualizedContainerService.HintSize="654,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_12" Text="[CurrentRow(9).ToString]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5f36fd55-bf7d-4232-bbe5-a19a3034d202" InformativeScreenshot="a3f43ae04f25a4c4d471a28f493b0a1b" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:TypeInto>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Valider avec F10" sap:VirtualizedContainerService.HintSize="654,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="f10" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2dcb6b33-6cc5-4c7c-a58d-7b409a8bab85" InformativeScreenshot="6b66a16bd4fc33c36ac3aab7a37eebcd" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:SendHotkey>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="1000" DisplayName="passer a l'ecran suivant pour relever l'adresse" sap:VirtualizedContainerService.HintSize="654,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="f10" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86ed8c8c-16c3-4a0f-9502-002e851ed64d" InformativeScreenshot="dcac058e43a429baad1fc59c89e4120e" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:SendHotkey>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Saisie AGDPS" sap:VirtualizedContainerService.HintSize="654,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_13" Text="AGDPS[k(enter)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2db7ed88-e9e0-4a7a-b323-34672924d718" InformativeScreenshot="95c0c82d362400e18097eb0b857cc93d" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:TypeInto>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Saisie AGDAP" sap:VirtualizedContainerService.HintSize="654,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_14" Text="AGDAP [k(enter)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d06137d1-9194-41ba-a952-6c0cb4e780f8" InformativeScreenshot="fdc06a799790ba991b9354d005243241" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='10.242.16.177 - PuTTY' /&gt;&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:TypeInto>
+                <Sequence DisplayName="Extraction de données d'écran" sap:VirtualizedContainerService.HintSize="654,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '102421617 Putty'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="WindowScope_6" InformativeScreenshot="96e835052303fc529de6e9daa27e6831" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;">
+                    <ui:WindowScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:GetVisibleText WordsInfo="{x:Null}" DisplayName="Get Visible Text 'client 10.242.16.177'" FormattedText="False" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_5">
+                            <ui:GetVisibleText.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="609dcbde-1bfb-4f23-ace6-bb3f34f9da62" InformativeScreenshot="fd0f129a7bd5d79dcaa5e7d506af9754" Selector="&lt;ctrl name='10.242.16.177 - PuTTY' role='client' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:GetVisibleText.Target>
+                            <ui:GetVisibleText.Text>
+                              <OutArgument x:TypeArguments="ui:GenericValue">[EPP_Extraction_for_mail]</OutArgument>
+                            </ui:GetVisibleText.Text>
+                          </ui:GetVisibleText>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:WindowScope.Body>
+                  </ui:WindowScope>
+                </Sequence>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="[&quot; E-mail =&quot;+System.Text.RegularExpressions.Regex.Match( EPP_Extraction_for_mail,&quot;(?&lt;=Mel :).*(?= x)&quot;).ToString.TrimEnd]" />
+                <If Condition="[not String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Match( EPP_Extraction_for_mail,&quot;(?&lt;=Mel :).*(?= x)&quot;).ToString.TrimEnd)]" sap:VirtualizedContainerService.HintSize="654,318" sap2010:WorkflowViewState.IdRef="If_12">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie du Mail pro" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_10">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(15)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Match( EPP_Extraction_for_mail,"(?&lt;=Mel :).*(?= x)").ToString.TrimEnd]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Saisie du Mail pro" sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_33">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(15)]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">["Non trouvé"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'client 10.242.16.177'" sap:VirtualizedContainerService.HintSize="696,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="esc" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f0e28c5-8c7e-4d52-b058-e3c96bf59a6e" InformativeScreenshot="6244a38279edd4b2daac3008260ffcd6" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+              </ui:SendHotkey>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'client 10.242.16.177'" sap:VirtualizedContainerService.HintSize="696,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="esc" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f0e28c5-8c7e-4d52-b058-e3c96bf59a6e" InformativeScreenshot="6244a38279edd4b2daac3008260ffcd6" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+              </ui:SendHotkey>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="fermer la fenetre EPP" sap:VirtualizedContainerService.HintSize="814,106" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="bd06a699621ad806b98edb2bf24443a9" Selector="&lt;wnd app='putty.exe' cls='PuTTY' title='* - PuTTY' /&gt;&lt;ctrl name='* - PuTTY' role='client' /&gt;" WaitForReady="INTERACTIVE" />
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Confirmer la fermeture" sap:VirtualizedContainerService.HintSize="814,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe85e2b8-0a63-41e4-8733-68e68195bb0c" InformativeScreenshot="0a281ebb9135cd2ac388dd285b7ff5b8" Selector="&lt;wnd app='putty.exe' cls='#32770' title='PuTTY Exit Confirmation' /&gt;&lt;wnd ctrlid='1' title='OK' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+  </Sequence>
+</Activity>
